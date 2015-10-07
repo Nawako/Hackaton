@@ -8,8 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		EC3726161BC58F75000F23A8 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = EC3726151BC58F75000F23A8 /* main.m */; };
-		EC3726191BC58F75000F23A8 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = EC3726181BC58F75000F23A8 /* AppDelegate.m */; };
-		EC37261C1BC58F75000F23A8 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EC37261B1BC58F75000F23A8 /* ViewController.m */; };
 		EC37261F1BC58F75000F23A8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EC37261D1BC58F75000F23A8 /* Main.storyboard */; };
 		EC3726211BC58F75000F23A8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EC3726201BC58F75000F23A8 /* Assets.xcassets */; };
 		EC3726241BC58F75000F23A8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EC3726221BC58F75000F23A8 /* LaunchScreen.storyboard */; };
@@ -21,6 +19,13 @@
 		EC3726431BC58F75000F23A8 /* ExtensionDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = EC3726421BC58F75000F23A8 /* ExtensionDelegate.m */; };
 		EC3726461BC58F75000F23A8 /* NotificationController.m in Sources */ = {isa = PBXBuildFile; fileRef = EC3726451BC58F75000F23A8 /* NotificationController.m */; };
 		EC3726481BC58F75000F23A8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EC3726471BC58F75000F23A8 /* Assets.xcassets */; };
+		EC3726581BC58FB6000F23A8 /* WatchConnectivity.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EC3726571BC58FB6000F23A8 /* WatchConnectivity.framework */; };
+		EC3726791BC58FCA000F23A8 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = EC37265B1BC58FCA000F23A8 /* AppDelegate.m */; settings = {ASSET_TAGS = (); }; };
+		EC37267A1BC58FCA000F23A8 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EC37265D1BC58FCA000F23A8 /* ViewController.m */; settings = {ASSET_TAGS = (); }; };
+		EC37267B1BC58FCA000F23A8 /* Grouping.m in Sources */ = {isa = PBXBuildFile; fileRef = EC3726621BC58FCA000F23A8 /* Grouping.m */; settings = {ASSET_TAGS = (); }; };
+		EC37267C1BC58FCA000F23A8 /* Word.m in Sources */ = {isa = PBXBuildFile; fileRef = EC3726671BC58FCA000F23A8 /* Word.m */; settings = {ASSET_TAGS = (); }; };
+		EC37267D1BC58FCA000F23A8 /* MockGroupingRepository.m in Sources */ = {isa = PBXBuildFile; fileRef = EC3726711BC58FCA000F23A8 /* MockGroupingRepository.m */; settings = {ASSET_TAGS = (); }; };
+		EC37267E1BC58FCA000F23A8 /* MockWordRepository.m in Sources */ = {isa = PBXBuildFile; fileRef = EC3726741BC58FCA000F23A8 /* MockWordRepository.m */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -68,10 +73,6 @@
 /* Begin PBXFileReference section */
 		EC3726111BC58F75000F23A8 /* EasyTalk.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EasyTalk.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EC3726151BC58F75000F23A8 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		EC3726171BC58F75000F23A8 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		EC3726181BC58F75000F23A8 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		EC37261A1BC58F75000F23A8 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		EC37261B1BC58F75000F23A8 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		EC37261E1BC58F75000F23A8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		EC3726201BC58F75000F23A8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EC3726231BC58F75000F23A8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -90,6 +91,21 @@
 		EC3726451BC58F75000F23A8 /* NotificationController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NotificationController.m; sourceTree = "<group>"; };
 		EC3726471BC58F75000F23A8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EC3726491BC58F75000F23A8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EC3726571BC58FB6000F23A8 /* WatchConnectivity.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WatchConnectivity.framework; path = System/Library/Frameworks/WatchConnectivity.framework; sourceTree = SDKROOT; };
+		EC37265A1BC58FCA000F23A8 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		EC37265B1BC58FCA000F23A8 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		EC37265C1BC58FCA000F23A8 /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		EC37265D1BC58FCA000F23A8 /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		EC3726611BC58FCA000F23A8 /* Grouping.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Grouping.h; sourceTree = "<group>"; };
+		EC3726621BC58FCA000F23A8 /* Grouping.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Grouping.m; sourceTree = "<group>"; };
+		EC3726631BC58FCA000F23A8 /* IGroupingRepository.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IGroupingRepository.h; sourceTree = "<group>"; };
+		EC3726651BC58FCA000F23A8 /* IWordRepository.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IWordRepository.h; sourceTree = "<group>"; };
+		EC3726661BC58FCA000F23A8 /* Word.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Word.h; sourceTree = "<group>"; };
+		EC3726671BC58FCA000F23A8 /* Word.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Word.m; sourceTree = "<group>"; };
+		EC3726701BC58FCA000F23A8 /* MockGroupingRepository.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MockGroupingRepository.h; sourceTree = "<group>"; };
+		EC3726711BC58FCA000F23A8 /* MockGroupingRepository.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MockGroupingRepository.m; sourceTree = "<group>"; };
+		EC3726731BC58FCA000F23A8 /* MockWordRepository.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MockWordRepository.h; sourceTree = "<group>"; };
+		EC3726741BC58FCA000F23A8 /* MockWordRepository.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MockWordRepository.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +113,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EC3726581BC58FB6000F23A8 /* WatchConnectivity.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -113,6 +130,7 @@
 		EC3726081BC58F75000F23A8 = {
 			isa = PBXGroup;
 			children = (
+				EC3726571BC58FB6000F23A8 /* WatchConnectivity.framework */,
 				EC3726131BC58F75000F23A8 /* EasyTalk */,
 				EC37262C1BC58F75000F23A8 /* EasyTalk WatchKit App */,
 				EC37263B1BC58F75000F23A8 /* EasyTalk WatchKit Extension */,
@@ -133,10 +151,9 @@
 		EC3726131BC58F75000F23A8 /* EasyTalk */ = {
 			isa = PBXGroup;
 			children = (
-				EC3726171BC58F75000F23A8 /* AppDelegate.h */,
-				EC3726181BC58F75000F23A8 /* AppDelegate.m */,
-				EC37261A1BC58F75000F23A8 /* ViewController.h */,
-				EC37261B1BC58F75000F23A8 /* ViewController.m */,
+				EC3726591BC58FCA000F23A8 /* Application */,
+				EC37265E1BC58FCA000F23A8 /* Domain */,
+				EC3726681BC58FCA000F23A8 /* Platform */,
 				EC37261D1BC58F75000F23A8 /* Main.storyboard */,
 				EC3726201BC58F75000F23A8 /* Assets.xcassets */,
 				EC3726221BC58F75000F23A8 /* LaunchScreen.storyboard */,
@@ -186,6 +203,164 @@
 				EC37263D1BC58F75000F23A8 /* PushNotificationPayload.apns */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		EC3726591BC58FCA000F23A8 /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				EC37265A1BC58FCA000F23A8 /* AppDelegate.h */,
+				EC37265B1BC58FCA000F23A8 /* AppDelegate.m */,
+				EC37265C1BC58FCA000F23A8 /* ViewController.h */,
+				EC37265D1BC58FCA000F23A8 /* ViewController.m */,
+			);
+			name = Application;
+			path = ../../final/EasyTalk/Application;
+			sourceTree = "<group>";
+		};
+		EC37265E1BC58FCA000F23A8 /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+				EC37265F1BC58FCA000F23A8 /* Theme */,
+			);
+			name = Domain;
+			path = ../../final/EasyTalk/Domain;
+			sourceTree = "<group>";
+		};
+		EC37265F1BC58FCA000F23A8 /* Theme */ = {
+			isa = PBXGroup;
+			children = (
+				EC3726601BC58FCA000F23A8 /* Grouping */,
+				EC3726641BC58FCA000F23A8 /* Word */,
+			);
+			path = Theme;
+			sourceTree = "<group>";
+		};
+		EC3726601BC58FCA000F23A8 /* Grouping */ = {
+			isa = PBXGroup;
+			children = (
+				EC3726611BC58FCA000F23A8 /* Grouping.h */,
+				EC3726621BC58FCA000F23A8 /* Grouping.m */,
+				EC3726631BC58FCA000F23A8 /* IGroupingRepository.h */,
+			);
+			path = Grouping;
+			sourceTree = "<group>";
+		};
+		EC3726641BC58FCA000F23A8 /* Word */ = {
+			isa = PBXGroup;
+			children = (
+				EC3726651BC58FCA000F23A8 /* IWordRepository.h */,
+				EC3726661BC58FCA000F23A8 /* Word.h */,
+				EC3726671BC58FCA000F23A8 /* Word.m */,
+			);
+			path = Word;
+			sourceTree = "<group>";
+		};
+		EC3726681BC58FCA000F23A8 /* Platform */ = {
+			isa = PBXGroup;
+			children = (
+				EC3726691BC58FCA000F23A8 /* Factory */,
+				EC37266D1BC58FCA000F23A8 /* Mock */,
+				EC3726751BC58FCA000F23A8 /* Serialization */,
+			);
+			name = Platform;
+			path = ../../final/EasyTalk/Platform;
+			sourceTree = "<group>";
+		};
+		EC3726691BC58FCA000F23A8 /* Factory */ = {
+			isa = PBXGroup;
+			children = (
+				EC37266A1BC58FCA000F23A8 /* Theme */,
+			);
+			path = Factory;
+			sourceTree = "<group>";
+		};
+		EC37266A1BC58FCA000F23A8 /* Theme */ = {
+			isa = PBXGroup;
+			children = (
+				EC37266B1BC58FCA000F23A8 /* Grouping */,
+				EC37266C1BC58FCA000F23A8 /* Words */,
+			);
+			path = Theme;
+			sourceTree = "<group>";
+		};
+		EC37266B1BC58FCA000F23A8 /* Grouping */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Grouping;
+			sourceTree = "<group>";
+		};
+		EC37266C1BC58FCA000F23A8 /* Words */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Words;
+			sourceTree = "<group>";
+		};
+		EC37266D1BC58FCA000F23A8 /* Mock */ = {
+			isa = PBXGroup;
+			children = (
+				EC37266E1BC58FCA000F23A8 /* Theme */,
+			);
+			path = Mock;
+			sourceTree = "<group>";
+		};
+		EC37266E1BC58FCA000F23A8 /* Theme */ = {
+			isa = PBXGroup;
+			children = (
+				EC37266F1BC58FCA000F23A8 /* Grouping */,
+				EC3726721BC58FCA000F23A8 /* Word */,
+			);
+			path = Theme;
+			sourceTree = "<group>";
+		};
+		EC37266F1BC58FCA000F23A8 /* Grouping */ = {
+			isa = PBXGroup;
+			children = (
+				EC3726701BC58FCA000F23A8 /* MockGroupingRepository.h */,
+				EC3726711BC58FCA000F23A8 /* MockGroupingRepository.m */,
+			);
+			path = Grouping;
+			sourceTree = "<group>";
+		};
+		EC3726721BC58FCA000F23A8 /* Word */ = {
+			isa = PBXGroup;
+			children = (
+				EC3726731BC58FCA000F23A8 /* MockWordRepository.h */,
+				EC3726741BC58FCA000F23A8 /* MockWordRepository.m */,
+			);
+			path = Word;
+			sourceTree = "<group>";
+		};
+		EC3726751BC58FCA000F23A8 /* Serialization */ = {
+			isa = PBXGroup;
+			children = (
+				EC3726761BC58FCA000F23A8 /* Theme */,
+			);
+			path = Serialization;
+			sourceTree = "<group>";
+		};
+		EC3726761BC58FCA000F23A8 /* Theme */ = {
+			isa = PBXGroup;
+			children = (
+				EC3726771BC58FCA000F23A8 /* Grouping */,
+				EC3726781BC58FCA000F23A8 /* Words */,
+			);
+			path = Theme;
+			sourceTree = "<group>";
+		};
+		EC3726771BC58FCA000F23A8 /* Grouping */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Grouping;
+			sourceTree = "<group>";
+		};
+		EC3726781BC58FCA000F23A8 /* Words */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Words;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -319,8 +494,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EC37261C1BC58F75000F23A8 /* ViewController.m in Sources */,
-				EC3726191BC58F75000F23A8 /* AppDelegate.m in Sources */,
+				EC37267C1BC58FCA000F23A8 /* Word.m in Sources */,
+				EC37267B1BC58FCA000F23A8 /* Grouping.m in Sources */,
+				EC37267A1BC58FCA000F23A8 /* ViewController.m in Sources */,
+				EC3726791BC58FCA000F23A8 /* AppDelegate.m in Sources */,
+				EC37267D1BC58FCA000F23A8 /* MockGroupingRepository.m in Sources */,
+				EC37267E1BC58FCA000F23A8 /* MockWordRepository.m in Sources */,
 				EC3726161BC58F75000F23A8 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
