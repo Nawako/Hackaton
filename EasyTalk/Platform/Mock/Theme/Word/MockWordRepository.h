@@ -11,4 +11,6 @@
 
 @interface MockWordRepository : NSObject <IWordRepository>
 
+- (NSArray<Word*>*) getAll;
+
 @end

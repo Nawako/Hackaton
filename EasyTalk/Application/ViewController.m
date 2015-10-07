@@ -7,16 +7,30 @@
 //
 
 #import "ViewController.h"
+#import <WatchConnectivity/WatchConnectivity.h>
+#import "IGroupingRepository.h"
 
-@interface ViewController ()
+@interface ViewController () <WCSessionDelegate>
 
 @end
 
 @implementation ViewController
 
+@dynamic categoryRepository;
+
+//- (id<IGroupingRepository>)blurayRepository {
+//    return [[BlurayRepositoryFactory sharedInstance] blurayRepository];
+//}
+
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+    // Do any additional setup after loading the view, typically from a ]
+    
+    if ([WCSession defaultSession].paired && [WCSession defaultSession].watchAppInstalled) {
+        [[WCSession defaultSession] transferUserInfo:@{
+                                                       @"CAT" : @(TODO)
+                                                       }];
+    }
 }
 
 - (void)didReceiveMemoryWarning {

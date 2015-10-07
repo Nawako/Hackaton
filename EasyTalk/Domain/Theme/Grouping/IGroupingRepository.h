@@ -10,8 +10,8 @@
 #import "Grouping.h"
 
 @protocol IGroupingRepository <NSObject>
-@required
 
+@required
 
 - (void) saveGrouping:(Grouping*)gr;
 - (void) deleteGrouping:(Grouping*)gr;

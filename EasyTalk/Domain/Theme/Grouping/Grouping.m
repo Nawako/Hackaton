@@ -24,6 +24,10 @@
     [aCoder encodeObject:self.idCat forKey:@"ID"];
 }
 
+//- (NSArray*) groupingList {
+//    NSMutableArray* losl = @[self.name, self.idCat];
+//    return losl;
+//}
 
 - (NSString *) description {
     return [NSString stringWithFormat:@"Categorie [name=%@,  id=%@]", self.name, self.idCat];

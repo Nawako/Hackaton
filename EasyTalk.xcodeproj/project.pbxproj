@@ -8,6 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		521D18E71BC5AFD000762338 /* VoiceController.m in Sources */ = {isa = PBXBuildFile; fileRef = 521D18E61BC5AFD000762338 /* VoiceController.m */; settings = {ASSET_TAGS = (); }; };
+		521D19031BC5C74500762338 /* GroupingRepositoryFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 521D18EF1BC5C74500762338 /* GroupingRepositoryFactory.m */; settings = {ASSET_TAGS = (); }; };
+		521D19041BC5C74500762338 /* WordRepositoryFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 521D18F21BC5C74500762338 /* WordRepositoryFactory.m */; settings = {ASSET_TAGS = (); }; };
+		521D19051BC5C74500762338 /* MockGroupingRepository.m in Sources */ = {isa = PBXBuildFile; fileRef = 521D18F71BC5C74500762338 /* MockGroupingRepository.m */; settings = {ASSET_TAGS = (); }; };
+		521D19061BC5C74500762338 /* MockWordRepository.m in Sources */ = {isa = PBXBuildFile; fileRef = 521D18FA1BC5C74500762338 /* MockWordRepository.m */; settings = {ASSET_TAGS = (); }; };
+		521D19071BC5C74500762338 /* SerializableGroupingRepository.m in Sources */ = {isa = PBXBuildFile; fileRef = 521D18FF1BC5C74500762338 /* SerializableGroupingRepository.m */; settings = {ASSET_TAGS = (); }; };
+		521D19081BC5C74500762338 /* SerializableWordRepository.m in Sources */ = {isa = PBXBuildFile; fileRef = 521D19021BC5C74500762338 /* SerializableWordRepository.m */; settings = {ASSET_TAGS = (); }; };
 		EC3726161BC58F75000F23A8 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = EC3726151BC58F75000F23A8 /* main.m */; };
 		EC37261F1BC58F75000F23A8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EC37261D1BC58F75000F23A8 /* Main.storyboard */; };
 		EC3726211BC58F75000F23A8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EC3726201BC58F75000F23A8 /* Assets.xcassets */; };
@@ -25,8 +31,6 @@
 		ECD2A3911BC593CB00F5CD1E /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ECD2A3741BC593CB00F5CD1E /* ViewController.m */; settings = {ASSET_TAGS = (); }; };
 		ECD2A3921BC593CB00F5CD1E /* Grouping.m in Sources */ = {isa = PBXBuildFile; fileRef = ECD2A3791BC593CB00F5CD1E /* Grouping.m */; settings = {ASSET_TAGS = (); }; };
 		ECD2A3931BC593CB00F5CD1E /* Word.m in Sources */ = {isa = PBXBuildFile; fileRef = ECD2A37E1BC593CB00F5CD1E /* Word.m */; settings = {ASSET_TAGS = (); }; };
-		ECD2A3941BC593CB00F5CD1E /* MockGroupingRepository.m in Sources */ = {isa = PBXBuildFile; fileRef = ECD2A3881BC593CB00F5CD1E /* MockGroupingRepository.m */; settings = {ASSET_TAGS = (); }; };
-		ECD2A3951BC593CB00F5CD1E /* MockWordRepository.m in Sources */ = {isa = PBXBuildFile; fileRef = ECD2A38B1BC593CB00F5CD1E /* MockWordRepository.m */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -74,6 +78,18 @@
 /* Begin PBXFileReference section */
 		521D18E51BC5AFD000762338 /* VoiceController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VoiceController.h; sourceTree = "<group>"; };
 		521D18E61BC5AFD000762338 /* VoiceController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VoiceController.m; sourceTree = "<group>"; };
+		521D18EE1BC5C74500762338 /* GroupingRepositoryFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GroupingRepositoryFactory.h; sourceTree = "<group>"; };
+		521D18EF1BC5C74500762338 /* GroupingRepositoryFactory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GroupingRepositoryFactory.m; sourceTree = "<group>"; };
+		521D18F11BC5C74500762338 /* WordRepositoryFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WordRepositoryFactory.h; sourceTree = "<group>"; };
+		521D18F21BC5C74500762338 /* WordRepositoryFactory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WordRepositoryFactory.m; sourceTree = "<group>"; };
+		521D18F61BC5C74500762338 /* MockGroupingRepository.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MockGroupingRepository.h; sourceTree = "<group>"; };
+		521D18F71BC5C74500762338 /* MockGroupingRepository.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MockGroupingRepository.m; sourceTree = "<group>"; };
+		521D18F91BC5C74500762338 /* MockWordRepository.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MockWordRepository.h; sourceTree = "<group>"; };
+		521D18FA1BC5C74500762338 /* MockWordRepository.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MockWordRepository.m; sourceTree = "<group>"; };
+		521D18FE1BC5C74500762338 /* SerializableGroupingRepository.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SerializableGroupingRepository.h; sourceTree = "<group>"; };
+		521D18FF1BC5C74500762338 /* SerializableGroupingRepository.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SerializableGroupingRepository.m; sourceTree = "<group>"; };
+		521D19011BC5C74500762338 /* SerializableWordRepository.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SerializableWordRepository.h; sourceTree = "<group>"; };
+		521D19021BC5C74500762338 /* SerializableWordRepository.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SerializableWordRepository.m; sourceTree = "<group>"; };
 		EC3726111BC58F75000F23A8 /* EasyTalk.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EasyTalk.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EC3726151BC58F75000F23A8 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		EC37261E1BC58F75000F23A8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -105,10 +121,6 @@
 		ECD2A37C1BC593CB00F5CD1E /* IWordRepository.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IWordRepository.h; sourceTree = "<group>"; };
 		ECD2A37D1BC593CB00F5CD1E /* Word.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Word.h; sourceTree = "<group>"; };
 		ECD2A37E1BC593CB00F5CD1E /* Word.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Word.m; sourceTree = "<group>"; };
-		ECD2A3871BC593CB00F5CD1E /* MockGroupingRepository.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MockGroupingRepository.h; sourceTree = "<group>"; };
-		ECD2A3881BC593CB00F5CD1E /* MockGroupingRepository.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MockGroupingRepository.m; sourceTree = "<group>"; };
-		ECD2A38A1BC593CB00F5CD1E /* MockWordRepository.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MockWordRepository.h; sourceTree = "<group>"; };
-		ECD2A38B1BC593CB00F5CD1E /* MockWordRepository.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MockWordRepository.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -130,6 +142,111 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		521D18EB1BC5C74500762338 /* Factory */ = {
+			isa = PBXGroup;
+			children = (
+				521D18EC1BC5C74500762338 /* Theme */,
+			);
+			path = Factory;
+			sourceTree = "<group>";
+		};
+		521D18EC1BC5C74500762338 /* Theme */ = {
+			isa = PBXGroup;
+			children = (
+				521D18ED1BC5C74500762338 /* Grouping */,
+				521D18F01BC5C74500762338 /* Word */,
+			);
+			path = Theme;
+			sourceTree = "<group>";
+		};
+		521D18ED1BC5C74500762338 /* Grouping */ = {
+			isa = PBXGroup;
+			children = (
+				521D18EE1BC5C74500762338 /* GroupingRepositoryFactory.h */,
+				521D18EF1BC5C74500762338 /* GroupingRepositoryFactory.m */,
+			);
+			path = Grouping;
+			sourceTree = "<group>";
+		};
+		521D18F01BC5C74500762338 /* Word */ = {
+			isa = PBXGroup;
+			children = (
+				521D18F11BC5C74500762338 /* WordRepositoryFactory.h */,
+				521D18F21BC5C74500762338 /* WordRepositoryFactory.m */,
+			);
+			path = Word;
+			sourceTree = "<group>";
+		};
+		521D18F31BC5C74500762338 /* Mock */ = {
+			isa = PBXGroup;
+			children = (
+				521D18F41BC5C74500762338 /* Theme */,
+			);
+			path = Mock;
+			sourceTree = "<group>";
+		};
+		521D18F41BC5C74500762338 /* Theme */ = {
+			isa = PBXGroup;
+			children = (
+				521D18F51BC5C74500762338 /* Grouping */,
+				521D18F81BC5C74500762338 /* Word */,
+			);
+			path = Theme;
+			sourceTree = "<group>";
+		};
+		521D18F51BC5C74500762338 /* Grouping */ = {
+			isa = PBXGroup;
+			children = (
+				521D18F61BC5C74500762338 /* MockGroupingRepository.h */,
+				521D18F71BC5C74500762338 /* MockGroupingRepository.m */,
+			);
+			path = Grouping;
+			sourceTree = "<group>";
+		};
+		521D18F81BC5C74500762338 /* Word */ = {
+			isa = PBXGroup;
+			children = (
+				521D18F91BC5C74500762338 /* MockWordRepository.h */,
+				521D18FA1BC5C74500762338 /* MockWordRepository.m */,
+			);
+			path = Word;
+			sourceTree = "<group>";
+		};
+		521D18FB1BC5C74500762338 /* Serialization */ = {
+			isa = PBXGroup;
+			children = (
+				521D18FC1BC5C74500762338 /* Theme */,
+			);
+			path = Serialization;
+			sourceTree = "<group>";
+		};
+		521D18FC1BC5C74500762338 /* Theme */ = {
+			isa = PBXGroup;
+			children = (
+				521D18FD1BC5C74500762338 /* Grouping */,
+				521D19001BC5C74500762338 /* Word */,
+			);
+			path = Theme;
+			sourceTree = "<group>";
+		};
+		521D18FD1BC5C74500762338 /* Grouping */ = {
+			isa = PBXGroup;
+			children = (
+				521D18FE1BC5C74500762338 /* SerializableGroupingRepository.h */,
+				521D18FF1BC5C74500762338 /* SerializableGroupingRepository.m */,
+			);
+			path = Grouping;
+			sourceTree = "<group>";
+		};
+		521D19001BC5C74500762338 /* Word */ = {
+			isa = PBXGroup;
+			children = (
+				521D19011BC5C74500762338 /* SerializableWordRepository.h */,
+				521D19021BC5C74500762338 /* SerializableWordRepository.m */,
+			);
+			path = Word;
+			sourceTree = "<group>";
+		};
 		EC3726081BC58F75000F23A8 = {
 			isa = PBXGroup;
 			children = (
@@ -261,108 +378,11 @@
 		ECD2A37F1BC593CB00F5CD1E /* Platform */ = {
 			isa = PBXGroup;
 			children = (
-				ECD2A3801BC593CB00F5CD1E /* Factory */,
-				ECD2A3841BC593CB00F5CD1E /* Mock */,
-				ECD2A38C1BC593CB00F5CD1E /* Serialization */,
+				521D18EB1BC5C74500762338 /* Factory */,
+				521D18F31BC5C74500762338 /* Mock */,
+				521D18FB1BC5C74500762338 /* Serialization */,
 			);
 			path = Platform;
-			sourceTree = "<group>";
-		};
-		ECD2A3801BC593CB00F5CD1E /* Factory */ = {
-			isa = PBXGroup;
-			children = (
-				ECD2A3811BC593CB00F5CD1E /* Theme */,
-			);
-			path = Factory;
-			sourceTree = "<group>";
-		};
-		ECD2A3811BC593CB00F5CD1E /* Theme */ = {
-			isa = PBXGroup;
-			children = (
-				ECD2A3821BC593CB00F5CD1E /* Grouping */,
-				ECD2A3831BC593CB00F5CD1E /* Words */,
-			);
-			path = Theme;
-			sourceTree = "<group>";
-		};
-		ECD2A3821BC593CB00F5CD1E /* Grouping */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Grouping;
-			sourceTree = "<group>";
-		};
-		ECD2A3831BC593CB00F5CD1E /* Words */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Words;
-			sourceTree = "<group>";
-		};
-		ECD2A3841BC593CB00F5CD1E /* Mock */ = {
-			isa = PBXGroup;
-			children = (
-				ECD2A3851BC593CB00F5CD1E /* Theme */,
-			);
-			path = Mock;
-			sourceTree = "<group>";
-		};
-		ECD2A3851BC593CB00F5CD1E /* Theme */ = {
-			isa = PBXGroup;
-			children = (
-				ECD2A3861BC593CB00F5CD1E /* Grouping */,
-				ECD2A3891BC593CB00F5CD1E /* Word */,
-			);
-			path = Theme;
-			sourceTree = "<group>";
-		};
-		ECD2A3861BC593CB00F5CD1E /* Grouping */ = {
-			isa = PBXGroup;
-			children = (
-				ECD2A3871BC593CB00F5CD1E /* MockGroupingRepository.h */,
-				ECD2A3881BC593CB00F5CD1E /* MockGroupingRepository.m */,
-			);
-			path = Grouping;
-			sourceTree = "<group>";
-		};
-		ECD2A3891BC593CB00F5CD1E /* Word */ = {
-			isa = PBXGroup;
-			children = (
-				ECD2A38A1BC593CB00F5CD1E /* MockWordRepository.h */,
-				ECD2A38B1BC593CB00F5CD1E /* MockWordRepository.m */,
-			);
-			path = Word;
-			sourceTree = "<group>";
-		};
-		ECD2A38C1BC593CB00F5CD1E /* Serialization */ = {
-			isa = PBXGroup;
-			children = (
-				ECD2A38D1BC593CB00F5CD1E /* Theme */,
-			);
-			path = Serialization;
-			sourceTree = "<group>";
-		};
-		ECD2A38D1BC593CB00F5CD1E /* Theme */ = {
-			isa = PBXGroup;
-			children = (
-				ECD2A38E1BC593CB00F5CD1E /* Grouping */,
-				ECD2A38F1BC593CB00F5CD1E /* Words */,
-			);
-			path = Theme;
-			sourceTree = "<group>";
-		};
-		ECD2A38E1BC593CB00F5CD1E /* Grouping */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Grouping;
-			sourceTree = "<group>";
-		};
-		ECD2A38F1BC593CB00F5CD1E /* Words */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Words;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -496,12 +516,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				521D19051BC5C74500762338 /* MockGroupingRepository.m in Sources */,
 				ECD2A3931BC593CB00F5CD1E /* Word.m in Sources */,
+				521D19041BC5C74500762338 /* WordRepositoryFactory.m in Sources */,
+				521D19031BC5C74500762338 /* GroupingRepositoryFactory.m in Sources */,
 				ECD2A3921BC593CB00F5CD1E /* Grouping.m in Sources */,
 				ECD2A3911BC593CB00F5CD1E /* ViewController.m in Sources */,
+				521D19071BC5C74500762338 /* SerializableGroupingRepository.m in Sources */,
+				521D19081BC5C74500762338 /* SerializableWordRepository.m in Sources */,
+				521D19061BC5C74500762338 /* MockWordRepository.m in Sources */,
 				ECD2A3901BC593CB00F5CD1E /* AppDelegate.m in Sources */,
-				ECD2A3941BC593CB00F5CD1E /* MockGroupingRepository.m in Sources */,
-				ECD2A3951BC593CB00F5CD1E /* MockWordRepository.m in Sources */,
 				EC3726161BC58F75000F23A8 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
