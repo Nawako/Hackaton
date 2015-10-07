@@ -15,23 +15,23 @@
 - (void) deleteWord:(Word*)word { }
 
 - (NSArray<Word*>*) getAll {
-    NSMutableArray* library = [NSMutableArray new];
+    NSMutableArray* listWord = [NSMutableArray new];
     
     Word* m1 = [[Word alloc] init];
     m1.categ = @"Boulangerie";
     m1.idWord = @(001);
     m1.name = @"croissant";
     
-    [library addObject:m1];
+    [listWord addObject:m1];
     
     Word* m2 = [[Word alloc] init];
     m2.name= @"Ticket";
     m2.categ = @"Transport";
     m2.idWord = @(002);
     
-    [library addObject:m2];
+    [listWord addObject:m2];
     
-    return library;
+    return listWord;
 }
 
 - (Word*) searchWordWithName:(NSString*)name {

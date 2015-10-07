@@ -15,20 +15,20 @@
 - (void) deleteGrouping:(id)gr { }
 
 - (NSArray<Grouping*>*) getAll {
-    NSMutableArray* library = [NSMutableArray new];
+    NSMutableArray* listGroup = [NSMutableArray new];
     
     Grouping* gr1 = [[Grouping alloc] init];
     gr1.name = @"Boulangerie";
     gr1.idCat = @(001);
-    [library addObject:gr1];
+    [listGroup addObject:gr1];
     
     Grouping* gr2 = [[Grouping alloc] init];
     gr2.name = @"Transport";
     gr2.idCat = @(002);
    
-    [library addObject:gr2];
+    [listGroup addObject:gr2];
     
-    return library;
+    return listGroup;
 }
 
 - (Grouping*) searchGroupingWithName:(NSString *)name {
