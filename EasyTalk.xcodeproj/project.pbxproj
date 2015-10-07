@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		521D18E71BC5AFD000762338 /* VoiceController.m in Sources */ = {isa = PBXBuildFile; fileRef = 521D18E61BC5AFD000762338 /* VoiceController.m */; settings = {ASSET_TAGS = (); }; };
 		EC3726161BC58F75000F23A8 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = EC3726151BC58F75000F23A8 /* main.m */; };
 		EC37261F1BC58F75000F23A8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EC37261D1BC58F75000F23A8 /* Main.storyboard */; };
 		EC3726211BC58F75000F23A8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EC3726201BC58F75000F23A8 /* Assets.xcassets */; };
@@ -71,6 +72,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		521D18E51BC5AFD000762338 /* VoiceController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VoiceController.h; sourceTree = "<group>"; };
+		521D18E61BC5AFD000762338 /* VoiceController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VoiceController.m; sourceTree = "<group>"; };
 		EC3726111BC58F75000F23A8 /* EasyTalk.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EasyTalk.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EC3726151BC58F75000F23A8 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		EC37261E1BC58F75000F23A8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -193,6 +196,8 @@
 				EC3726471BC58F75000F23A8 /* Assets.xcassets */,
 				EC3726491BC58F75000F23A8 /* Info.plist */,
 				EC37263C1BC58F75000F23A8 /* Supporting Files */,
+				521D18E51BC5AFD000762338 /* VoiceController.h */,
+				521D18E61BC5AFD000762338 /* VoiceController.m */,
 			);
 			path = "EasyTalk WatchKit Extension";
 			sourceTree = "<group>";
@@ -507,6 +512,7 @@
 			files = (
 				EC3726431BC58F75000F23A8 /* ExtensionDelegate.m in Sources */,
 				EC3726401BC58F75000F23A8 /* InterfaceController.m in Sources */,
+				521D18E71BC5AFD000762338 /* VoiceController.m in Sources */,
 				EC3726461BC58F75000F23A8 /* NotificationController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
