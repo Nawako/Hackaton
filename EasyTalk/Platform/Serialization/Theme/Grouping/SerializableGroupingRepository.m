@@ -1,32 +1,53 @@
 //
-//  GroupingRepositoryFactory.m
-//  EasyTalk
+//  SerializableGroupingRepository.m
+//  ESGILibrary
 //
-//  Created by Nawako on 07/10/2015.
-//  Copyright © 2015 Etudiant. All rights reserved.
+//  Created by Benoit BRIATTE on 05/10/2015.
+//  Copyright © 2015 Digipolitan. All rights reserved.
 //
 
-#import "GroupingRepositoryFactory.h"
-#import "MockGroupingRepository.h"
-// #import "SerializableGroupingRepository.h"
+#import "SerializableGroupingRepository.h"
 
-static GroupingRepositoryFactory* sharedInstance_ = nil;
+@implementation SerializableGroupingRepository
 
-@implementation GroupingRepositoryFactory
-
-+ (instancetype)sharedInstance {
-    if(sharedInstance_ == nil) {
-        sharedInstance_ = [[GroupingRepositoryFactory alloc] init];
+- (instancetype) initWithFileName:(NSString*)filename {
+    if( (self = [super init]) ) {
+        NSArray* documentPaths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
+        filePath_ = [[documentPaths objectAtIndex:0] stringByAppendingPathComponent:filename];
+        groupingList_ = [NSKeyedUnarchiver unarchiveObjectWithFile:filePath_];
     }
-    return sharedInstance_;
+    return self;
 }
 
-- (id<IGroupingRepository>)blurayRepository {
-    if(!groupingRepository_) {
-        groupingRepository_ = [[MockGroupingRepository alloc] init];
-       // groupingRepository_ = [[SerializableBlurayRepository alloc] initWithFileName:@"bluray.archive"];
+- (void) saveGrouping:(Grouping*)br {
+    if(groupingList_ == nil) {
+        groupingList_ = [[NSMutableArray alloc] init];
     }
-    return groupingRepository_;
+    NSInteger indexOf = [groupingList_ indexOfObject:br];
+    if(indexOf != NSNotFound) {
+        [groupingList_ replaceObjectAtIndex:indexOf withObject:br];
+    } else {
+        [groupingList_ addObject:br];
+    }
+    [NSKeyedArchiver archiveRootObject:groupingList_ toFile:filePath_];
+}
+
+- (void) deleteGrouping:(Grouping*)br {
+    [groupingList_ removeObject:br];
+    [NSKeyedArchiver archiveRootObject:groupingList_ toFile:filePath_];
+}
+
+- (NSArray<Grouping*>*) getAll {
+    return groupingList_;
+}
+
+- (Grouping*) searchGroupingWithName:(NSString*)name {
+    for(Grouping* br in groupingList_) {
+        if([br.name isEqualToString:name]) {
+            return br;
+        }
+    }
+    return nil;
 }
 
 @end

@@ -1,5 +1,5 @@
 //
-//  GroupingRepositoryFactory.h
+//  WordRepositoryFactory.h
 //  EasyTalk
 //
 //  Created by Nawako on 07/10/2015.
@@ -7,15 +7,14 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "IGroupingRepository.h"
+#import "IWordRepository.h"
 
-@interface GroupingRepositoryFactory : NSObject {
-    @private
-    id<IGroupingRepository> groupingRepository_;
+@interface SerializableWordRepository : NSObject <IWordRepository> {
+@private
+    NSString* filePath_;
+    NSMutableArray<Word*>* wordList_;
 }
 
-+ (instancetype) sharedInstance;
-
-- (id<IGroupingRepository>) groupingRepository;
+- (instancetype) initWithFileName:(NSString*)filename;
 
 @end

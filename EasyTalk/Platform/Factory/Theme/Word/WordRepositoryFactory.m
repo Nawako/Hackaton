@@ -1,32 +1,32 @@
 //
-//  GroupingRepositoryFactory.m
+//  WordRepositoryFactory.m
 //  EasyTalk
 //
 //  Created by Nawako on 07/10/2015.
 //  Copyright © 2015 Etudiant. All rights reserved.
 //
 
-#import "GroupingRepositoryFactory.h"
-#import "MockGroupingRepository.h"
-// #import "SerializableGroupingRepository.h"
+#import "WordRepositoryFactory.h"
+#import "MockWordRepository.h"
+// #import "SerializableWordRepository.h"
 
-static GroupingRepositoryFactory* sharedInstance_ = nil;
+static WordRepositoryFactory* sharedInstance_ = nil;
 
-@implementation GroupingRepositoryFactory
+@implementation WordRepositoryFactory
 
 + (instancetype)sharedInstance {
     if(sharedInstance_ == nil) {
-        sharedInstance_ = [[GroupingRepositoryFactory alloc] init];
+        sharedInstance_ = [[WordRepositoryFactory alloc] init];
     }
     return sharedInstance_;
 }
 
-- (id<IGroupingRepository>)blurayRepository {
-    if(!groupingRepository_) {
-        groupingRepository_ = [[MockGroupingRepository alloc] init];
-       // groupingRepository_ = [[SerializableBlurayRepository alloc] initWithFileName:@"bluray.archive"];
+- (id<IWordRepository>)wordRepository {
+    if(!wordRepository_) {
+        wordRepository_ = [[MockWordRepository alloc] init];
+    //  wordRepository_ = [[SerializableBlurayRepository alloc] initWithFileName:@"word.archive"];
     }
-    return groupingRepository_;
+    return wordRepository_;
 }
 
 @end

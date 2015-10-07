@@ -21,10 +21,10 @@ static GroupingRepositoryFactory* sharedInstance_ = nil;
     return sharedInstance_;
 }
 
-- (id<IGroupingRepository>)blurayRepository {
+- (id<IGroupingRepository>)groupingRepository {
     if(!groupingRepository_) {
         groupingRepository_ = [[MockGroupingRepository alloc] init];
-       // groupingRepository_ = [[SerializableBlurayRepository alloc] initWithFileName:@"bluray.archive"];
+       // groupingRepository_ = [[SerializableBlurayRepository alloc] initWithFileName:@"grouping.archive"];
     }
     return groupingRepository_;
 }

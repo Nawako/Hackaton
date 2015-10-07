@@ -1,32 +1,53 @@
 //
-//  GroupingRepositoryFactory.m
-//  EasyTalk
+//  SerializableWordRepository.m
+//  ESGILibrary
 //
-//  Created by Nawako on 07/10/2015.
-//  Copyright © 2015 Etudiant. All rights reserved.
+//  Created by Benoit BRIATTE on 05/10/2015.
+//  Copyright © 2015 Digipolitan. All rights reserved.
 //
 
-#import "GroupingRepositoryFactory.h"
-#import "MockGroupingRepository.h"
-// #import "SerializableGroupingRepository.h"
+#import "SerializableWordRepository.h"
 
-static GroupingRepositoryFactory* sharedInstance_ = nil;
+@implementation SerializableWordRepository
 
-@implementation GroupingRepositoryFactory
-
-+ (instancetype)sharedInstance {
-    if(sharedInstance_ == nil) {
-        sharedInstance_ = [[GroupingRepositoryFactory alloc] init];
+- (instancetype) initWithFileName:(NSString*)filename {
+    if( (self = [super init]) ) {
+        NSArray* documentPaths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
+        filePath_ = [[documentPaths objectAtIndex:0] stringByAppendingPathComponent:filename];
+        wordList_ = [NSKeyedUnarchiver unarchiveObjectWithFile:filePath_];
     }
-    return sharedInstance_;
+    return self;
 }
 
-- (id<IGroupingRepository>)blurayRepository {
-    if(!groupingRepository_) {
-        groupingRepository_ = [[MockGroupingRepository alloc] init];
-       // groupingRepository_ = [[SerializableBlurayRepository alloc] initWithFileName:@"bluray.archive"];
+- (void) saveWord:(Word*)br {
+    if(wordList_ == nil) {
+        wordList_ = [[NSMutableArray alloc] init];
     }
-    return groupingRepository_;
+    NSInteger indexOf = [wordList_ indexOfObject:br];
+    if(indexOf != NSNotFound) {
+        [wordList_ replaceObjectAtIndex:indexOf withObject:br];
+    } else {
+        [wordList_ addObject:br];
+    }
+    [NSKeyedArchiver archiveRootObject:wordList_ toFile:filePath_];
+}
+
+- (void) deleteWord:(Word*)br {
+    [wordList_ removeObject:br];
+    [NSKeyedArchiver archiveRootObject:wordList_ toFile:filePath_];
+}
+
+- (NSArray<Word*>*) getAll {
+    return wordList_;
+}
+
+- (Word*) searchWordWithName:(NSString*)name {
+    for(Word* br in wordList_) {
+        if([br.name isEqualToString:name]) {
+            return br;
+        }
+    }
+    return nil;
 }
 
 @end

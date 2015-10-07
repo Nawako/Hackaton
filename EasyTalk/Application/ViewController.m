@@ -16,8 +16,6 @@
 
 @implementation ViewController
 
-@dynamic categoryRepository;
-
 //- (id<IGroupingRepository>)blurayRepository {
 //    return [[BlurayRepositoryFactory sharedInstance] blurayRepository];
 //}
@@ -28,7 +26,7 @@
     
     if ([WCSession defaultSession].paired && [WCSession defaultSession].watchAppInstalled) {
         [[WCSession defaultSession] transferUserInfo:@{
-                                                       @"CAT" : @(TODO)
+                                                       @"CAT" : @("TODO")
                                                        }];
     }
 }

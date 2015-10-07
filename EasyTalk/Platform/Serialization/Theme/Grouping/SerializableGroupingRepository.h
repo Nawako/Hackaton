@@ -9,13 +9,12 @@
 #import <Foundation/Foundation.h>
 #import "IGroupingRepository.h"
 
-@interface GroupingRepositoryFactory : NSObject {
-    @private
-    id<IGroupingRepository> groupingRepository_;
+@interface SerializableGroupingRepository : NSObject <IGroupingRepository> {
+@private
+    NSString* filePath_;
+    NSMutableArray<Grouping*>* groupingList_;
 }
 
-+ (instancetype) sharedInstance;
-
-- (id<IGroupingRepository>) groupingRepository;
+- (instancetype) initWithFileName:(NSString*)filename;
 
 @end

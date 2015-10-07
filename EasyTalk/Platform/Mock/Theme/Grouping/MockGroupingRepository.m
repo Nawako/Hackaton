@@ -1,5 +1,5 @@
 //
-//  MockCategorieRepository.m
+//  MockGroupingRepository.m
 //  EasyTalk
 //
 //  Created by Etudiant on 07/10/2015.
