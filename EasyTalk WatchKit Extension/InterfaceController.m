@@ -25,6 +25,12 @@
 - (void)willActivate {
     // This method is called when watch view controller is about to be visible to user
     [super willActivate];
+    
+    // pour avoir la dictation
+    [self presentTextInputControllerWithSuggestions:@[@"hello", @"world"] allowedInputMode:WKTextInputModePlain completion:^(NSArray *results) {
+        NSLog(@"results: %@", results);
+    }];
+    
 }
 
 - (void)didDeactivate {
