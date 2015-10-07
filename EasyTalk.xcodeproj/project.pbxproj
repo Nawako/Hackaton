@@ -20,12 +20,12 @@
 		EC3726461BC58F75000F23A8 /* NotificationController.m in Sources */ = {isa = PBXBuildFile; fileRef = EC3726451BC58F75000F23A8 /* NotificationController.m */; };
 		EC3726481BC58F75000F23A8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EC3726471BC58F75000F23A8 /* Assets.xcassets */; };
 		EC3726581BC58FB6000F23A8 /* WatchConnectivity.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EC3726571BC58FB6000F23A8 /* WatchConnectivity.framework */; };
-		EC3726791BC58FCA000F23A8 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = EC37265B1BC58FCA000F23A8 /* AppDelegate.m */; settings = {ASSET_TAGS = (); }; };
-		EC37267A1BC58FCA000F23A8 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EC37265D1BC58FCA000F23A8 /* ViewController.m */; settings = {ASSET_TAGS = (); }; };
-		EC37267B1BC58FCA000F23A8 /* Grouping.m in Sources */ = {isa = PBXBuildFile; fileRef = EC3726621BC58FCA000F23A8 /* Grouping.m */; settings = {ASSET_TAGS = (); }; };
-		EC37267C1BC58FCA000F23A8 /* Word.m in Sources */ = {isa = PBXBuildFile; fileRef = EC3726671BC58FCA000F23A8 /* Word.m */; settings = {ASSET_TAGS = (); }; };
-		EC37267D1BC58FCA000F23A8 /* MockGroupingRepository.m in Sources */ = {isa = PBXBuildFile; fileRef = EC3726711BC58FCA000F23A8 /* MockGroupingRepository.m */; settings = {ASSET_TAGS = (); }; };
-		EC37267E1BC58FCA000F23A8 /* MockWordRepository.m in Sources */ = {isa = PBXBuildFile; fileRef = EC3726741BC58FCA000F23A8 /* MockWordRepository.m */; settings = {ASSET_TAGS = (); }; };
+		ECD2A3901BC593CB00F5CD1E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = ECD2A3721BC593CB00F5CD1E /* AppDelegate.m */; settings = {ASSET_TAGS = (); }; };
+		ECD2A3911BC593CB00F5CD1E /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ECD2A3741BC593CB00F5CD1E /* ViewController.m */; settings = {ASSET_TAGS = (); }; };
+		ECD2A3921BC593CB00F5CD1E /* Grouping.m in Sources */ = {isa = PBXBuildFile; fileRef = ECD2A3791BC593CB00F5CD1E /* Grouping.m */; settings = {ASSET_TAGS = (); }; };
+		ECD2A3931BC593CB00F5CD1E /* Word.m in Sources */ = {isa = PBXBuildFile; fileRef = ECD2A37E1BC593CB00F5CD1E /* Word.m */; settings = {ASSET_TAGS = (); }; };
+		ECD2A3941BC593CB00F5CD1E /* MockGroupingRepository.m in Sources */ = {isa = PBXBuildFile; fileRef = ECD2A3881BC593CB00F5CD1E /* MockGroupingRepository.m */; settings = {ASSET_TAGS = (); }; };
+		ECD2A3951BC593CB00F5CD1E /* MockWordRepository.m in Sources */ = {isa = PBXBuildFile; fileRef = ECD2A38B1BC593CB00F5CD1E /* MockWordRepository.m */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -92,20 +92,20 @@
 		EC3726471BC58F75000F23A8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EC3726491BC58F75000F23A8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EC3726571BC58FB6000F23A8 /* WatchConnectivity.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WatchConnectivity.framework; path = System/Library/Frameworks/WatchConnectivity.framework; sourceTree = SDKROOT; };
-		EC37265A1BC58FCA000F23A8 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		EC37265B1BC58FCA000F23A8 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		EC37265C1BC58FCA000F23A8 /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		EC37265D1BC58FCA000F23A8 /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		EC3726611BC58FCA000F23A8 /* Grouping.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Grouping.h; sourceTree = "<group>"; };
-		EC3726621BC58FCA000F23A8 /* Grouping.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Grouping.m; sourceTree = "<group>"; };
-		EC3726631BC58FCA000F23A8 /* IGroupingRepository.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IGroupingRepository.h; sourceTree = "<group>"; };
-		EC3726651BC58FCA000F23A8 /* IWordRepository.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IWordRepository.h; sourceTree = "<group>"; };
-		EC3726661BC58FCA000F23A8 /* Word.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Word.h; sourceTree = "<group>"; };
-		EC3726671BC58FCA000F23A8 /* Word.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Word.m; sourceTree = "<group>"; };
-		EC3726701BC58FCA000F23A8 /* MockGroupingRepository.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MockGroupingRepository.h; sourceTree = "<group>"; };
-		EC3726711BC58FCA000F23A8 /* MockGroupingRepository.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MockGroupingRepository.m; sourceTree = "<group>"; };
-		EC3726731BC58FCA000F23A8 /* MockWordRepository.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MockWordRepository.h; sourceTree = "<group>"; };
-		EC3726741BC58FCA000F23A8 /* MockWordRepository.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MockWordRepository.m; sourceTree = "<group>"; };
+		ECD2A3711BC593CB00F5CD1E /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		ECD2A3721BC593CB00F5CD1E /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		ECD2A3731BC593CB00F5CD1E /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		ECD2A3741BC593CB00F5CD1E /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		ECD2A3781BC593CB00F5CD1E /* Grouping.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Grouping.h; sourceTree = "<group>"; };
+		ECD2A3791BC593CB00F5CD1E /* Grouping.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Grouping.m; sourceTree = "<group>"; };
+		ECD2A37A1BC593CB00F5CD1E /* IGroupingRepository.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IGroupingRepository.h; sourceTree = "<group>"; };
+		ECD2A37C1BC593CB00F5CD1E /* IWordRepository.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IWordRepository.h; sourceTree = "<group>"; };
+		ECD2A37D1BC593CB00F5CD1E /* Word.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Word.h; sourceTree = "<group>"; };
+		ECD2A37E1BC593CB00F5CD1E /* Word.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Word.m; sourceTree = "<group>"; };
+		ECD2A3871BC593CB00F5CD1E /* MockGroupingRepository.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MockGroupingRepository.h; sourceTree = "<group>"; };
+		ECD2A3881BC593CB00F5CD1E /* MockGroupingRepository.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MockGroupingRepository.m; sourceTree = "<group>"; };
+		ECD2A38A1BC593CB00F5CD1E /* MockWordRepository.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MockWordRepository.h; sourceTree = "<group>"; };
+		ECD2A38B1BC593CB00F5CD1E /* MockWordRepository.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MockWordRepository.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -151,9 +151,9 @@
 		EC3726131BC58F75000F23A8 /* EasyTalk */ = {
 			isa = PBXGroup;
 			children = (
-				EC3726591BC58FCA000F23A8 /* Application */,
-				EC37265E1BC58FCA000F23A8 /* Domain */,
-				EC3726681BC58FCA000F23A8 /* Platform */,
+				ECD2A3701BC593CB00F5CD1E /* Application */,
+				ECD2A3751BC593CB00F5CD1E /* Domain */,
+				ECD2A37F1BC593CB00F5CD1E /* Platform */,
 				EC37261D1BC58F75000F23A8 /* Main.storyboard */,
 				EC3726201BC58F75000F23A8 /* Assets.xcassets */,
 				EC3726221BC58F75000F23A8 /* LaunchScreen.storyboard */,
@@ -205,158 +205,155 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		EC3726591BC58FCA000F23A8 /* Application */ = {
+		ECD2A3701BC593CB00F5CD1E /* Application */ = {
 			isa = PBXGroup;
 			children = (
-				EC37265A1BC58FCA000F23A8 /* AppDelegate.h */,
-				EC37265B1BC58FCA000F23A8 /* AppDelegate.m */,
-				EC37265C1BC58FCA000F23A8 /* ViewController.h */,
-				EC37265D1BC58FCA000F23A8 /* ViewController.m */,
+				ECD2A3711BC593CB00F5CD1E /* AppDelegate.h */,
+				ECD2A3721BC593CB00F5CD1E /* AppDelegate.m */,
+				ECD2A3731BC593CB00F5CD1E /* ViewController.h */,
+				ECD2A3741BC593CB00F5CD1E /* ViewController.m */,
 			);
-			name = Application;
-			path = ../../final/EasyTalk/Application;
+			path = Application;
 			sourceTree = "<group>";
 		};
-		EC37265E1BC58FCA000F23A8 /* Domain */ = {
+		ECD2A3751BC593CB00F5CD1E /* Domain */ = {
 			isa = PBXGroup;
 			children = (
-				EC37265F1BC58FCA000F23A8 /* Theme */,
+				ECD2A3761BC593CB00F5CD1E /* Theme */,
 			);
-			name = Domain;
-			path = ../../final/EasyTalk/Domain;
+			path = Domain;
 			sourceTree = "<group>";
 		};
-		EC37265F1BC58FCA000F23A8 /* Theme */ = {
+		ECD2A3761BC593CB00F5CD1E /* Theme */ = {
 			isa = PBXGroup;
 			children = (
-				EC3726601BC58FCA000F23A8 /* Grouping */,
-				EC3726641BC58FCA000F23A8 /* Word */,
+				ECD2A3771BC593CB00F5CD1E /* Grouping */,
+				ECD2A37B1BC593CB00F5CD1E /* Word */,
 			);
 			path = Theme;
 			sourceTree = "<group>";
 		};
-		EC3726601BC58FCA000F23A8 /* Grouping */ = {
+		ECD2A3771BC593CB00F5CD1E /* Grouping */ = {
 			isa = PBXGroup;
 			children = (
-				EC3726611BC58FCA000F23A8 /* Grouping.h */,
-				EC3726621BC58FCA000F23A8 /* Grouping.m */,
-				EC3726631BC58FCA000F23A8 /* IGroupingRepository.h */,
+				ECD2A3781BC593CB00F5CD1E /* Grouping.h */,
+				ECD2A3791BC593CB00F5CD1E /* Grouping.m */,
+				ECD2A37A1BC593CB00F5CD1E /* IGroupingRepository.h */,
 			);
 			path = Grouping;
 			sourceTree = "<group>";
 		};
-		EC3726641BC58FCA000F23A8 /* Word */ = {
+		ECD2A37B1BC593CB00F5CD1E /* Word */ = {
 			isa = PBXGroup;
 			children = (
-				EC3726651BC58FCA000F23A8 /* IWordRepository.h */,
-				EC3726661BC58FCA000F23A8 /* Word.h */,
-				EC3726671BC58FCA000F23A8 /* Word.m */,
+				ECD2A37C1BC593CB00F5CD1E /* IWordRepository.h */,
+				ECD2A37D1BC593CB00F5CD1E /* Word.h */,
+				ECD2A37E1BC593CB00F5CD1E /* Word.m */,
 			);
 			path = Word;
 			sourceTree = "<group>";
 		};
-		EC3726681BC58FCA000F23A8 /* Platform */ = {
+		ECD2A37F1BC593CB00F5CD1E /* Platform */ = {
 			isa = PBXGroup;
 			children = (
-				EC3726691BC58FCA000F23A8 /* Factory */,
-				EC37266D1BC58FCA000F23A8 /* Mock */,
-				EC3726751BC58FCA000F23A8 /* Serialization */,
+				ECD2A3801BC593CB00F5CD1E /* Factory */,
+				ECD2A3841BC593CB00F5CD1E /* Mock */,
+				ECD2A38C1BC593CB00F5CD1E /* Serialization */,
 			);
-			name = Platform;
-			path = ../../final/EasyTalk/Platform;
+			path = Platform;
 			sourceTree = "<group>";
 		};
-		EC3726691BC58FCA000F23A8 /* Factory */ = {
+		ECD2A3801BC593CB00F5CD1E /* Factory */ = {
 			isa = PBXGroup;
 			children = (
-				EC37266A1BC58FCA000F23A8 /* Theme */,
+				ECD2A3811BC593CB00F5CD1E /* Theme */,
 			);
 			path = Factory;
 			sourceTree = "<group>";
 		};
-		EC37266A1BC58FCA000F23A8 /* Theme */ = {
+		ECD2A3811BC593CB00F5CD1E /* Theme */ = {
 			isa = PBXGroup;
 			children = (
-				EC37266B1BC58FCA000F23A8 /* Grouping */,
-				EC37266C1BC58FCA000F23A8 /* Words */,
+				ECD2A3821BC593CB00F5CD1E /* Grouping */,
+				ECD2A3831BC593CB00F5CD1E /* Words */,
 			);
 			path = Theme;
 			sourceTree = "<group>";
 		};
-		EC37266B1BC58FCA000F23A8 /* Grouping */ = {
+		ECD2A3821BC593CB00F5CD1E /* Grouping */ = {
 			isa = PBXGroup;
 			children = (
 			);
 			path = Grouping;
 			sourceTree = "<group>";
 		};
-		EC37266C1BC58FCA000F23A8 /* Words */ = {
+		ECD2A3831BC593CB00F5CD1E /* Words */ = {
 			isa = PBXGroup;
 			children = (
 			);
 			path = Words;
 			sourceTree = "<group>";
 		};
-		EC37266D1BC58FCA000F23A8 /* Mock */ = {
+		ECD2A3841BC593CB00F5CD1E /* Mock */ = {
 			isa = PBXGroup;
 			children = (
-				EC37266E1BC58FCA000F23A8 /* Theme */,
+				ECD2A3851BC593CB00F5CD1E /* Theme */,
 			);
 			path = Mock;
 			sourceTree = "<group>";
 		};
-		EC37266E1BC58FCA000F23A8 /* Theme */ = {
+		ECD2A3851BC593CB00F5CD1E /* Theme */ = {
 			isa = PBXGroup;
 			children = (
-				EC37266F1BC58FCA000F23A8 /* Grouping */,
-				EC3726721BC58FCA000F23A8 /* Word */,
+				ECD2A3861BC593CB00F5CD1E /* Grouping */,
+				ECD2A3891BC593CB00F5CD1E /* Word */,
 			);
 			path = Theme;
 			sourceTree = "<group>";
 		};
-		EC37266F1BC58FCA000F23A8 /* Grouping */ = {
+		ECD2A3861BC593CB00F5CD1E /* Grouping */ = {
 			isa = PBXGroup;
 			children = (
-				EC3726701BC58FCA000F23A8 /* MockGroupingRepository.h */,
-				EC3726711BC58FCA000F23A8 /* MockGroupingRepository.m */,
+				ECD2A3871BC593CB00F5CD1E /* MockGroupingRepository.h */,
+				ECD2A3881BC593CB00F5CD1E /* MockGroupingRepository.m */,
 			);
 			path = Grouping;
 			sourceTree = "<group>";
 		};
-		EC3726721BC58FCA000F23A8 /* Word */ = {
+		ECD2A3891BC593CB00F5CD1E /* Word */ = {
 			isa = PBXGroup;
 			children = (
-				EC3726731BC58FCA000F23A8 /* MockWordRepository.h */,
-				EC3726741BC58FCA000F23A8 /* MockWordRepository.m */,
+				ECD2A38A1BC593CB00F5CD1E /* MockWordRepository.h */,
+				ECD2A38B1BC593CB00F5CD1E /* MockWordRepository.m */,
 			);
 			path = Word;
 			sourceTree = "<group>";
 		};
-		EC3726751BC58FCA000F23A8 /* Serialization */ = {
+		ECD2A38C1BC593CB00F5CD1E /* Serialization */ = {
 			isa = PBXGroup;
 			children = (
-				EC3726761BC58FCA000F23A8 /* Theme */,
+				ECD2A38D1BC593CB00F5CD1E /* Theme */,
 			);
 			path = Serialization;
 			sourceTree = "<group>";
 		};
-		EC3726761BC58FCA000F23A8 /* Theme */ = {
+		ECD2A38D1BC593CB00F5CD1E /* Theme */ = {
 			isa = PBXGroup;
 			children = (
-				EC3726771BC58FCA000F23A8 /* Grouping */,
-				EC3726781BC58FCA000F23A8 /* Words */,
+				ECD2A38E1BC593CB00F5CD1E /* Grouping */,
+				ECD2A38F1BC593CB00F5CD1E /* Words */,
 			);
 			path = Theme;
 			sourceTree = "<group>";
 		};
-		EC3726771BC58FCA000F23A8 /* Grouping */ = {
+		ECD2A38E1BC593CB00F5CD1E /* Grouping */ = {
 			isa = PBXGroup;
 			children = (
 			);
 			path = Grouping;
 			sourceTree = "<group>";
 		};
-		EC3726781BC58FCA000F23A8 /* Words */ = {
+		ECD2A38F1BC593CB00F5CD1E /* Words */ = {
 			isa = PBXGroup;
 			children = (
 			);
@@ -494,12 +491,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EC37267C1BC58FCA000F23A8 /* Word.m in Sources */,
-				EC37267B1BC58FCA000F23A8 /* Grouping.m in Sources */,
-				EC37267A1BC58FCA000F23A8 /* ViewController.m in Sources */,
-				EC3726791BC58FCA000F23A8 /* AppDelegate.m in Sources */,
-				EC37267D1BC58FCA000F23A8 /* MockGroupingRepository.m in Sources */,
-				EC37267E1BC58FCA000F23A8 /* MockWordRepository.m in Sources */,
+				ECD2A3931BC593CB00F5CD1E /* Word.m in Sources */,
+				ECD2A3921BC593CB00F5CD1E /* Grouping.m in Sources */,
+				ECD2A3911BC593CB00F5CD1E /* ViewController.m in Sources */,
+				ECD2A3901BC593CB00F5CD1E /* AppDelegate.m in Sources */,
+				ECD2A3941BC593CB00F5CD1E /* MockGroupingRepository.m in Sources */,
+				ECD2A3951BC593CB00F5CD1E /* MockWordRepository.m in Sources */,
 				EC3726161BC58F75000F23A8 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -736,6 +733,7 @@
 				EC37264E1BC58F75000F23A8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		EC3726501BC58F75000F23A8 /* Build configuration list for PBXNativeTarget "EasyTalk WatchKit App" */ = {
 			isa = XCConfigurationList;
@@ -744,6 +742,7 @@
 				EC3726521BC58F75000F23A8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		EC3726541BC58F75000F23A8 /* Build configuration list for PBXNativeTarget "EasyTalk" */ = {
 			isa = XCConfigurationList;
@@ -752,6 +751,7 @@
 				EC3726561BC58F75000F23A8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
