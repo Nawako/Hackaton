@@ -23,7 +23,7 @@
 - (void) encodeWithCoder:(NSCoder *)aCoder {
     [aCoder encodeObject:self.name forKey:@"NAME"];
     [aCoder encodeObject:self.idWord forKey:@"ID"];
-    [aCoder encodeObject:self.idWord forKey:@"CATEG"];
+    [aCoder encodeObject:self.categ forKey:@"CATEG"];
 }
 
 
