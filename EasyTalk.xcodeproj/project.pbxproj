@@ -349,6 +349,10 @@
 				ECD2A3721BC593CB00F5CD1E /* AppDelegate.m */,
 				ECD2A3731BC593CB00F5CD1E /* ViewController.h */,
 				ECD2A3741BC593CB00F5CD1E /* ViewController.m */,
+				EC47E7231BC646A900F9F61B /* AddGroupingViewController.h */,
+				EC47E7241BC646A900F9F61B /* AddGroupingViewController.m */,
+				EC47E7261BC64B6700F9F61B /* AddWordViewController.h */,
+				EC47E7271BC64B6700F9F61B /* AddWordViewController.m */,
 			);
 			path = Application;
 			sourceTree = "<group>";
@@ -531,11 +535,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EC47E7281BC64B6700F9F61B /* AddWordViewController.m in Sources */,
 				521D19051BC5C74500762338 /* MockGroupingRepository.m in Sources */,
 				ECD2A3931BC593CB00F5CD1E /* Word.m in Sources */,
 				521D19041BC5C74500762338 /* WordRepositoryFactory.m in Sources */,
 				521D19031BC5C74500762338 /* GroupingRepositoryFactory.m in Sources */,
 				ECD2A3921BC593CB00F5CD1E /* Grouping.m in Sources */,
+				EC47E7251BC646A900F9F61B /* AddGroupingViewController.m in Sources */,
 				ECD2A3911BC593CB00F5CD1E /* ViewController.m in Sources */,
 				521D19071BC5C74500762338 /* SerializableGroupingRepository.m in Sources */,
 				521D19081BC5C74500762338 /* SerializableWordRepository.m in Sources */,

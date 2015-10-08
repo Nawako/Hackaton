@@ -24,6 +24,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    NSLog(@"lol");
     // Do any additional setup after loading the view, typically from a ]
     
     NSArray<Grouping*>* allGrouping = [self.groupingRepository getAll];

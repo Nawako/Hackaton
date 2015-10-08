@@ -14,7 +14,7 @@
 
 - (void) deleteWord:(Word*)word { }
 
-- (NSArray<Word*>*) getAll {
+- (NSMutableArray<Word*>*) getAll {
     NSMutableArray* listWord = [NSMutableArray new];
     
     Word* m1 = [[Word alloc] init];

@@ -14,11 +14,13 @@
     NSString* name_;
     NSString* categ_;
     NSNumber* idWord_;
+    Boolean* fav_;
 }
 
 
 @property (nonatomic, strong) NSString* name;
 @property (nonatomic, strong) NSString* categ;
 @property (nonatomic, strong) NSNumber* idWord;
+
 
 @end
