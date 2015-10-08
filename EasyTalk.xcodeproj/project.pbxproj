@@ -322,9 +322,6 @@
 				EC3726421BC58F75000F23A8 /* ExtensionDelegate.m */,
 				EC3726441BC58F75000F23A8 /* NotificationController.h */,
 				EC3726451BC58F75000F23A8 /* NotificationController.m */,
-				EC3726471BC58F75000F23A8 /* Assets.xcassets */,
-				EC3726491BC58F75000F23A8 /* Info.plist */,
-				EC37263C1BC58F75000F23A8 /* Supporting Files */,
 				521D18E51BC5AFD000762338 /* VoiceController.h */,
 				521D18E61BC5AFD000762338 /* VoiceController.m */,
 				EC41E4911BC653D900C8A730 /* GroupingInterfaceController.h */,
@@ -335,6 +332,9 @@
 				EC41E49B1BC6581D00C8A730 /* WordRowController.m */,
 				EC41E4A11BC66A1B00C8A730 /* WordInterfaceController.h */,
 				EC41E4A21BC66A1B00C8A730 /* WordInterfaceController.m */,
+				EC3726471BC58F75000F23A8 /* Assets.xcassets */,
+				EC3726491BC58F75000F23A8 /* Info.plist */,
+				EC37263C1BC58F75000F23A8 /* Supporting Files */,
 			);
 			path = "EasyTalk WatchKit Extension";
 			sourceTree = "<group>";
