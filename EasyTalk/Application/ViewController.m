@@ -8,7 +8,7 @@
 
 #import "ViewController.h"
 #import <WatchConnectivity/WatchConnectivity.h>
-#import "IGroupingRepository.h"
+#import "GroupingRepositoryFactory.h"
 
 @interface ViewController () <WCSessionDelegate>
 
@@ -16,20 +16,24 @@
 
 @implementation ViewController
 
-//- (id<IGroupingRepository>)blurayRepository {
-//    return [[BlurayRepositoryFactory sharedInstance] blurayRepository];
-//}
+@dynamic groupingRepository;
+
+- (id<IGroupingRepository>)groupingRepository {
+    return [[GroupingRepositoryFactory sharedInstance] groupingRepository];
+}
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     NSLog(@"lol");
     // Do any additional setup after loading the view, typically from a ]
     
+    NSArray<Grouping*>* allGrouping = [self.groupingRepository getAll];
+    
+    // Transfert de toutes les catégories vers la watch
     if ([WCSession defaultSession].paired && [WCSession defaultSession].watchAppInstalled) {
-        [[WCSession defaultSession] transferUserInfo:@{
-                                                       @"CAT" : @("TODO")
-                                                       }];
+        [[WCSession defaultSession] transferUserInfo:@{@"allGrouping": allGrouping}];
     }
+    NSLog(@"%@", allGrouping);
 }
 
 - (void)didReceiveMemoryWarning {
