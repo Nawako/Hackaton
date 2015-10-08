@@ -4,6 +4,53 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
     </dependencies>
     <scenes>
+        <!--Favorite View Controller-->
+        <scene sceneID="60Z-LW-RM9">
+            <objects>
+                <viewController id="yEI-Ua-mAO" customClass="FavoriteViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Q8k-jJ-o9e">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="Jgl-mr-0i4">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="Favorite" id="Eic-Qz-6Jg">
+                                        <rect key="frame" x="0.0" y="28" width="320" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Eic-Qz-6Jg" id="6FE-rP-J1S">
+                                            <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" tag="1" contentMode="scaleAspectFit" image="etoilefav vide" id="Uzg-dv-KJs">
+                                                    <rect key="frame" x="275" y="7" width="30" height="30"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                                </imageView>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="accessoryView" destination="Uzg-dv-KJs" id="1ML-8Q-aFY"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="yEI-Ua-mAO" id="812-Na-f4A"/>
+                                    <outlet property="delegate" destination="yEI-Ua-mAO" id="Ym1-lb-GTL"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <connections>
+                        <outlet property="FavoriteTable" destination="Jgl-mr-0i4" id="BlH-Wi-eT9"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Amb-fB-Mmc" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-502.93333333333334" y="416.5333333333333"/>
+        </scene>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
@@ -26,6 +73,14 @@
                                 <state key="normal" title="ajout mot"/>
                                 <connections>
                                     <segue destination="L81-JO-cPk" kind="modal" id="hxR-57-rbh"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="1n3-CY-red">
+                                <rect key="frame" x="121" y="261" width="50" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Favorie"/>
+                                <connections>
+                                    <segue destination="yEI-Ua-mAO" kind="modal" id="5Wz-Tv-1kH"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -128,7 +183,10 @@
             <point key="canvasLocation" x="277.86666666666667" y="416.5333333333333"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="etoilefav vide" width="12" height="12"/>
+    </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="hAd-Fo-Qv5"/>
+        <segue reference="vpb-8m-YDj"/>
     </inferredMetricsTieBreakers>
 </document>

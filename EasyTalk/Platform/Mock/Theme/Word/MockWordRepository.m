@@ -27,6 +27,7 @@
     [listWord addObject:m1];
     
     Word* m4 = [[Word alloc] init];
+    m4.grp = [[Grouping alloc] init];
     m4.grp.name = @"Boulangerie";
     m4.grp.idCat = @(001);
     m4.idWord = @(002);
@@ -34,6 +35,7 @@
     [listWord addObject:m4];
     
     Word* m3 = [[Word alloc] init];
+    m3.grp = [[Grouping alloc] init];
     m3.grp.name = @"Boulangerie";
     m3.grp.idCat = @(001);
     m3.idWord = @(003);
@@ -43,6 +45,7 @@
     
     
     Word* m2 = [[Word alloc] init];
+    m2.grp = [[Grouping alloc] init];
     m2.name= @"Ticket";
     m2.grp = [[Grouping alloc] init];
     m2.grp.name = @"Transport";
