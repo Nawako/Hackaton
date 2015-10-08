@@ -7,19 +7,20 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "Grouping.h"
 
 @interface Word : NSObject <NSCoding> {
     
 @private
     NSString* name_;
-    NSString* categ_;
+    Grouping* grp_;
     NSNumber* idWord_;
     Boolean* fav_;
 }
 
 
 @property (nonatomic, strong) NSString* name;
-@property (nonatomic, strong) NSString* categ;
+@property (nonatomic, strong) Grouping* grp;
 @property (nonatomic, strong) NSNumber* idWord;
 
 

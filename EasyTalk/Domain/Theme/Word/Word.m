@@ -15,7 +15,7 @@
     if( (self = [super init]) ) {
         self.name = [aDecoder decodeObjectForKey:@"NAME"];
         self.idWord = [aDecoder decodeObjectForKey:@"ID"];
-        self.categ = [aDecoder decodeObjectForKey:@"CATEG"];
+        self.grp = [aDecoder decodeObjectForKey:@"GRP"];
     }
     return self;
 }
@@ -23,12 +23,11 @@
 - (void) encodeWithCoder:(NSCoder *)aCoder {
     [aCoder encodeObject:self.name forKey:@"NAME"];
     [aCoder encodeObject:self.idWord forKey:@"ID"];
-    [aCoder encodeObject:self.categ forKey:@"CATEG"];
+    [aCoder encodeObject:self.grp forKey:@"GRP"];
 }
 
-
 - (NSString *) description {
-    return [NSString stringWithFormat:@"Categorie [name=%@,  id=%@, categorie=%@]", self.name, self.idWord, self.categ];
+    return [NSString stringWithFormat:@"Grouping [name=%@,  id=%@, categorie=%@]", self.name, self.idWord, self.grp];
 }
 
 

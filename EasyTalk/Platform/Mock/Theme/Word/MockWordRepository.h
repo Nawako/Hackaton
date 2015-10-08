@@ -11,6 +11,8 @@
 
 @interface MockWordRepository : NSObject <IWordRepository>
 
+- (void) saveWord:(Word*)word;
+- (void) deleteWord:(Word*)word;
 - (NSMutableArray<Word*>*) getAll;
 
 @end

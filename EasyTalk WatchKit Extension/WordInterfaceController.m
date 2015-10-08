@@ -30,9 +30,7 @@
     for (NSUInteger i = 0; i<count; i++) {
         WordRowController* rowController = [self.wordTable rowControllerAtIndex:i];
         
-        if ([values_ objectAtIndex:i] == @"Boulangerie") {
-            NSLog(@"Boulangerie");
-        }
+        
         
         NSLog(@"%@", [values_ objectAtIndex:i]);
         [rowController setLabel:[values_ objectAtIndex:i]];

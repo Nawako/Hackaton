@@ -13,4 +13,7 @@
 
 @property (strong, nonatomic) IBOutlet WKInterfaceTable *wordTable;
 
+- (NSDictionary*) getUserInfo;
+- (void) didReceiveUserInfo;
+
 @end
