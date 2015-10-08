@@ -46,6 +46,11 @@
     [super didDeactivate];
 }
 
+
+//- (void)table:(WKInterfaceTable *)table didSelectRowAtIndex:(NSInteger)rowIndex {
+//    [self pushControllerWithName:(nonnull NSString *) context:<#(nullable id)#>]
+//}
+
 @end
 
 

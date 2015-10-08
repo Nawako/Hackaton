@@ -16,8 +16,8 @@
                         <button alignment="left" id="Cq1-db-DP5">
                             <group key="contentGroup" width="1" height="33.5" alignment="left" id="p57-Nt-DeU">
                                 <items>
-                                    <label alignment="center" verticalAlignment="center" text="Easy" textAlignment="center" id="8oH-5g-QUC"/>
-                                    <label alignment="center" verticalAlignment="center" text="Talk" textAlignment="center" id="bEJ-ei-F9d">
+                                    <label alignment="center" verticalAlignment="center" text="E-" textAlignment="center" id="8oH-5g-QUC"/>
+                                    <label alignment="center" verticalAlignment="center" text="World" textAlignment="center" id="bEJ-ei-F9d">
                                         <color key="textColor" red="0.0" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                         <fontDescription key="font" type="boldSystem" pointSize="16"/>
                                     </label>
@@ -31,8 +31,8 @@
                         <button alignment="left" id="UA6-PJ-l0P">
                             <group key="contentGroup" width="134" height="33.5" alignment="left" id="MhN-GR-Vv0">
                                 <items>
-                                    <label alignment="center" verticalAlignment="center" text="Easy" textAlignment="center" id="Wws-Oq-Y5D"/>
-                                    <label alignment="center" verticalAlignment="center" text="Voice" textAlignment="center" id="t0n-NJ-hVR">
+                                    <label alignment="center" verticalAlignment="center" text="E-" textAlignment="center" id="Wws-Oq-Y5D"/>
+                                    <label width="40" alignment="center" verticalAlignment="center" text="Voice" textAlignment="center" id="t0n-NJ-hVR">
                                         <color key="textColor" red="1" green="0.0" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
                                         <fontDescription key="font" type="boldSystem" pointSize="15"/>
                                     </label>
@@ -91,12 +91,12 @@
                     </connections>
                 </controller>
             </objects>
-            <point key="canvasLocation" x="534" y="737"/>
+            <point key="canvasLocation" x="594" y="732"/>
         </scene>
-        <!--Word Controller-->
+        <!--WordController-->
         <scene sceneID="b0k-RJ-d4N">
             <objects>
-                <controller identifier="Word Controller" hidesWhenLoading="NO" id="Ahu-dk-GPS" customClass="WordInterfaceController">
+                <controller identifier="WordController" hidesWhenLoading="NO" id="Ahu-dk-GPS" customClass="WordInterfaceController">
                     <items>
                         <label alignment="center" text="- Mots -" textAlignment="center" id="HR4-PI-nRb">
                             <fontDescription key="font" type="system" pointSize="23"/>
@@ -242,6 +242,6 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="1U7-dt-d3e"/>
+        <segue reference="npT-fb-VhM"/>
     </inferredMetricsTieBreakers>
 </document>
