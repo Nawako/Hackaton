@@ -14,7 +14,7 @@
 
 - (void) deleteGrouping:(id)gr { }
 
-- (NSArray<Grouping*>*) getAll {
+- (NSMutableArray<Grouping*>*) getAll {
     NSMutableArray* listGroup = [NSMutableArray new];
     
     Grouping* gr1 = [[Grouping alloc] init];

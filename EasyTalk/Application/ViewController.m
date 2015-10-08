@@ -22,6 +22,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    NSLog(@"lol");
     // Do any additional setup after loading the view, typically from a ]
     
     if ([WCSession defaultSession].paired && [WCSession defaultSession].watchAppInstalled) {

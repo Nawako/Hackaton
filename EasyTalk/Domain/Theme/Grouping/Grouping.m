@@ -8,6 +8,7 @@
 
 #import "Grouping.h"
 
+
 @implementation Grouping
 
 
@@ -32,6 +33,8 @@
 - (NSString *) description {
     return [NSString stringWithFormat:@"Categorie [name=%@,  id=%@]", self.name, self.idCat];
 }
+
+
 
 
 @end
