@@ -1,5 +1,5 @@
 //
-//  GroupingInterfaceController.h
+//  WordInterfaceController.h
 //  EasyTalk
 //
 //  Created by Etudiant on 08/10/2015.
@@ -9,8 +9,8 @@
 #import <WatchKit/WatchKit.h>
 #import <Foundation/Foundation.h>
 
-@interface GroupingInterfaceController : WKInterfaceController
+@interface WordInterfaceController : WKInterfaceController
 
-@property (strong, nonatomic) IBOutlet WKInterfaceTable *groupingTable;
+@property (strong, nonatomic) IBOutlet WKInterfaceTable *wordTable;
 
 @end

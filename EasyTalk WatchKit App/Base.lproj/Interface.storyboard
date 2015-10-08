@@ -62,10 +62,10 @@
             </objects>
             <point key="canvasLocation" x="135" y="422"/>
         </scene>
-        <!--Grouping Interface Controller-->
+        <!--Grouping Controller-->
         <scene sceneID="pgh-zk-OgV">
             <objects>
-                <controller hidesWhenLoading="NO" id="9FZ-Wi-ano" customClass="GroupingInterfaceController">
+                <controller identifier="Grouping Controller" hidesWhenLoading="NO" id="9FZ-Wi-ano" customClass="GroupingInterfaceController">
                     <items>
                         <label alignment="center" text="- Categorie -" textAlignment="center" id="4yP-mK-DcP">
                             <fontDescription key="font" type="system" pointSize="23"/>
@@ -91,32 +91,38 @@
                     </connections>
                 </controller>
             </objects>
-            <point key="canvasLocation" x="568" y="197"/>
+            <point key="canvasLocation" x="534" y="737"/>
         </scene>
-        <!--Interface Controller-->
+        <!--Word Controller-->
         <scene sceneID="b0k-RJ-d4N">
             <objects>
-                <controller hidesWhenLoading="NO" id="Ahu-dk-GPS">
+                <controller identifier="Word Controller" hidesWhenLoading="NO" id="Ahu-dk-GPS" customClass="WordInterfaceController">
                     <items>
                         <label alignment="center" text="- Mots -" textAlignment="center" id="HR4-PI-nRb">
                             <fontDescription key="font" type="system" pointSize="23"/>
                         </label>
                         <table alignment="left" id="Xu1-Xh-QOA">
                             <items>
-                                <tableRow id="sth-B4-luz">
+                                <tableRow identifier="Word" id="sth-B4-luz" customClass="WordRowController">
                                     <group key="rootItem" width="1" alignment="left" id="nB9-cN-DnX">
                                         <items>
-                                            <label alignment="center" verticalAlignment="center" text="Mots" textAlignment="center" id="M2m-N8-FWU"/>
+                                            <label alignment="center" verticalAlignment="center" text="Mot" textAlignment="center" id="M2m-N8-FWU"/>
                                         </items>
                                     </group>
+                                    <connections>
+                                        <outlet property="wordLabel" destination="M2m-N8-FWU" id="5k6-Yh-LbD"/>
+                                    </connections>
                                 </tableRow>
                             </items>
                         </table>
                     </items>
                     <color key="backgroundColor" red="0.1464088325" green="0.62316597419999997" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    <connections>
+                        <outlet property="wordTable" destination="Xu1-Xh-QOA" id="7dh-2h-XJD"/>
+                    </connections>
                 </controller>
             </objects>
-            <point key="canvasLocation" x="863" y="197"/>
+            <point key="canvasLocation" x="811" y="737"/>
         </scene>
         <!--Interface Controller-->
         <scene sceneID="X7O-eU-UyD">
@@ -146,7 +152,7 @@
                     <color key="backgroundColor" red="0.1464088325" green="0.62316597419999997" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                 </controller>
             </objects>
-            <point key="canvasLocation" x="697" y="-245"/>
+            <point key="canvasLocation" x="888" y="-110"/>
         </scene>
         <!--Voice Controller-->
         <scene sceneID="Ncb-aZ-6Yf">
@@ -168,7 +174,7 @@
                     </connections>
                 </controller>
             </objects>
-            <point key="canvasLocation" x="220" y="-105"/>
+            <point key="canvasLocation" x="673" y="422"/>
         </scene>
         <!--Static Notification Interface Controller-->
         <scene sceneID="AEw-b0-oYE">
@@ -184,7 +190,7 @@
                     </connections>
                 </notificationController>
             </objects>
-            <point key="canvasLocation" x="220" y="946"/>
+            <point key="canvasLocation" x="135" y="1092"/>
         </scene>
         <!--Interface Controller-->
         <scene sceneID="2XF-WT-IBu">
@@ -197,18 +203,20 @@
                         </label>
                         <group width="1" height="33.5" alignment="left" id="LIp-yd-yHt">
                             <items>
-                                <label alignment="center" verticalAlignment="center" text="Easy" textAlignment="center" id="cuv-uc-HTi"/>
-                                <label alignment="center" verticalAlignment="center" text="Talk" textAlignment="center" id="PTh-1F-WtC">
+                                <label alignment="center" verticalAlignment="center" text="E-" textAlignment="center" id="cuv-uc-HTi"/>
+                                <label alignment="center" verticalAlignment="center" text="World" textAlignment="center" id="PTh-1F-WtC">
                                     <color key="textColor" red="0.0" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                     <fontDescription key="font" type="boldSystem" pointSize="16"/>
                                 </label>
                             </items>
                             <color key="backgroundColor" red="0.40000000600000002" green="0.80000001190000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                         </group>
-                        <label alignment="left" text="Blablablablablablablablablablablablablabla explicatif" numberOfLines="6" id="KWl-zv-doT"/>
+                        <label alignment="left" textAlignment="justified" numberOfLines="18" id="KWl-zv-doT">
+                            <string key="text">Vous trouverez ici une bibliothèque de mots classés par thème qui vous permettra de vous exprimer en fonction du contexte dans lequel vous vous trouvez. Vous pouvez selectionner certaines listes en favoris et une liste des 20 mots les plus utilisés vous sera proposée.</string>
+                        </label>
                         <group width="134" height="33.5" alignment="left" id="5aE-xI-oFX">
                             <items>
-                                <label alignment="center" verticalAlignment="center" text="Easy" textAlignment="center" id="9BO-h8-MD5"/>
+                                <label alignment="center" verticalAlignment="center" text="E-" textAlignment="center" id="9BO-h8-MD5"/>
                                 <label alignment="center" verticalAlignment="center" text="Voice" textAlignment="center" id="NuA-tZ-HLN">
                                     <color key="textColor" red="1" green="0.0" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
                                     <fontDescription key="font" type="boldSystem" pointSize="15"/>
@@ -216,22 +224,24 @@
                             </items>
                             <color key="backgroundColor" red="0.40000000600000002" green="0.80000001190000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                         </group>
-                        <label alignment="left" text="Blablablablablablablablablablablablablabla explicatif" numberOfLines="6" id="4uo-xB-raw"/>
+                        <label alignment="left" numberOfLines="18" id="4uo-xB-raw">
+                            <string key="text">Cette fonctionnalité vous permettra de retranscrire ce que votre interlocuteur vous dira directement sur votre iwatch. Le micro s’active automatiquement et vous n’avez plus qu’à lire ce qu’on vous dit.</string>
+                        </label>
                     </items>
                     <color key="backgroundColor" red="0.1464088325" green="0.62316597419999997" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                 </controller>
             </objects>
-            <point key="canvasLocation" x="428" y="553.75"/>
+            <point key="canvasLocation" x="-120" y="1016.5"/>
         </scene>
         <!--Notification Controller-->
         <scene sceneID="ZPc-GJ-vnh">
             <objects>
                 <controller id="4sK-HA-Art" customClass="NotificationController"/>
             </objects>
-            <point key="canvasLocation" x="468" y="946"/>
+            <point key="canvasLocation" x="383" y="1092"/>
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="npT-fb-VhM"/>
+        <segue reference="1U7-dt-d3e"/>
     </inferredMetricsTieBreakers>
 </document>
