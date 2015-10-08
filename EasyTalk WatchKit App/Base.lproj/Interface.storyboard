@@ -10,12 +10,13 @@
             <objects>
                 <controller id="AgC-eL-Hgc" customClass="InterfaceController">
                     <items>
-                        <imageView width="49" height="40" alignment="left" id="kd6-l8-QAF"/>
+                        <imageView width="49" height="40" alignment="left" image="logo" id="kd6-l8-QAF"/>
                         <button alignment="left" id="Cq1-db-DP5">
                             <group key="contentGroup" width="1" height="35" alignment="left" id="VhO-yx-Nsf">
                                 <items>
                                     <label alignment="right" verticalAlignment="center" text="Evoice " id="EDH-jp-Bay"/>
                                 </items>
+                                <color key="backgroundColor" red="0.35686274509999999" green="0.70588235290000001" blue="0.8980392157" alpha="1" colorSpace="calibratedRGB"/>
                             </group>
                         </button>
                         <button alignment="left" id="P54-ce-UYd">
@@ -23,9 +24,10 @@
                                 <items>
                                     <label alignment="right" verticalAlignment="center" text="Eword " id="Xwe-qJ-ua4"/>
                                 </items>
+                                <color key="backgroundColor" red="0.35686274509999999" green="0.70588235290000001" blue="0.8980392157" alpha="1" colorSpace="calibratedRGB"/>
                             </group>
                             <connections>
-                                <segue destination="9FZ-Wi-ano" kind="push" id="ejj-gd-tAY"/>
+                                <segue destination="eCJ-Mz-RQe" kind="push" id="gJx-hX-GTd"/>
                             </connections>
                         </button>
                         <button alignment="left" id="Ydy-cy-LUk">
@@ -33,7 +35,11 @@
                                 <items>
                                     <label alignment="right" verticalAlignment="center" text="Help ? " id="Fsk-h2-jBL"/>
                                 </items>
+                                <color key="backgroundColor" red="0.35686274509999999" green="0.70588235290000001" blue="0.8980392157" alpha="1" colorSpace="calibratedRGB"/>
                             </group>
+                            <connections>
+                                <segue destination="fEL-e1-MoS" kind="push" id="xmw-zM-q3P"/>
+                            </connections>
                         </button>
                     </items>
                     <color key="backgroundColor" red="0.0" green="0.58039215686274503" blue="0.83137254901960778" alpha="1" colorSpace="calibratedRGB"/>
@@ -46,43 +52,57 @@
             <objects>
                 <controller hidesWhenLoading="NO" id="eCJ-Mz-RQe">
                     <items>
-                        <group width="1" height="38" alignment="left" id="8oK-2z-EUH">
-                            <items>
-                                <label alignment="right" verticalAlignment="center" text="Eword" id="WtL-bJ-QMP">
-                                    <fontDescription key="font" type="system" pointSize="27"/>
-                                </label>
-                                <imageView width="0.33000000000000002" alignment="left" verticalAlignment="center" image="icon_logo" contentMode="scaleAspectFit" id="NdE-fE-ydZ"/>
-                            </items>
-                        </group>
-                        <group width="1" height="27" alignment="left" id="JuC-4f-9JY">
-                            <items>
-                                <label alignment="right" verticalAlignment="center" text="Top 20" id="8ad-tz-D7h">
-                                    <fontDescription key="font" type="system" pointSize="16"/>
-                                </label>
-                                <imageView width="0.20000000000000001" alignment="left" verticalAlignment="center" image="icon_top20" contentMode="scaleAspectFit" id="peU-rO-mWa"/>
-                            </items>
-                        </group>
-                        <group width="1" height="27" alignment="left" id="UuR-hV-fH3">
-                            <items>
-                                <label alignment="right" verticalAlignment="center" text="Favoris" id="B1R-cX-DdX">
-                                    <fontDescription key="font" type="system" pointSize="16"/>
-                                </label>
-                                <imageView width="0.20000000000000001" alignment="left" verticalAlignment="center" image="icon_favoris" contentMode="scaleAspectFit" id="Ohx-9O-kav"/>
-                            </items>
-                        </group>
-                        <group width="1" height="27" alignment="left" id="F6A-ai-mk8">
-                            <items>
-                                <label alignment="right" verticalAlignment="center" text="Catégories" id="Wxh-3B-V5y">
-                                    <fontDescription key="font" type="system" pointSize="16"/>
-                                </label>
-                                <imageView width="0.20000000000000001" alignment="left" verticalAlignment="center" image="icon_categories" contentMode="scaleAspectFit" id="LyF-IR-YWK"/>
-                            </items>
-                        </group>
+                        <button alignment="left" id="GnC-pd-n7r">
+                            <group key="contentGroup" width="136" height="35" alignment="left" id="oKe-Du-JsU">
+                                <items>
+                                    <label alignment="right" verticalAlignment="center" text="Eword" id="WtL-bJ-QMP">
+                                        <fontDescription key="font" type="system" pointSize="27"/>
+                                    </label>
+                                    <imageView width="0.33000000000000002" alignment="left" verticalAlignment="center" image="icon_micro" contentMode="scaleAspectFit" id="NdE-fE-ydZ"/>
+                                </items>
+                            </group>
+                        </button>
+                        <button alignment="left" id="zHz-uM-ls3">
+                            <group key="contentGroup" width="1" height="35" alignment="left" id="Vsu-og-Eff">
+                                <items>
+                                    <label alignment="right" verticalAlignment="center" text="Top 20" id="8ad-tz-D7h">
+                                        <fontDescription key="font" type="system" pointSize="16"/>
+                                    </label>
+                                    <imageView width="0.20000000000000001" alignment="left" verticalAlignment="center" image="icon_top20" contentMode="scaleAspectFit" id="peU-rO-mWa"/>
+                                </items>
+                                <color key="backgroundColor" red="0.35686274509999999" green="0.70588235290000001" blue="0.8980392157" alpha="1" colorSpace="calibratedRGB"/>
+                            </group>
+                        </button>
+                        <button alignment="left" id="58n-pg-goM">
+                            <group key="contentGroup" width="1" height="35" alignment="left" id="5AZ-hu-gdU">
+                                <items>
+                                    <label alignment="right" verticalAlignment="center" text="Favoris" id="B1R-cX-DdX">
+                                        <fontDescription key="font" type="system" pointSize="16"/>
+                                    </label>
+                                    <imageView width="0.20000000000000001" alignment="left" verticalAlignment="center" image="icon_favoris" contentMode="scaleAspectFit" id="Ohx-9O-kav"/>
+                                </items>
+                                <color key="backgroundColor" red="0.35686274509999999" green="0.70588235290000001" blue="0.8980392157" alpha="1" colorSpace="calibratedRGB"/>
+                            </group>
+                        </button>
+                        <button alignment="left" id="sTg-1K-PFC">
+                            <group key="contentGroup" width="1" height="35" alignment="left" id="r14-Kz-tdK">
+                                <items>
+                                    <label alignment="right" verticalAlignment="center" text="Catégories" id="Wxh-3B-V5y">
+                                        <fontDescription key="font" type="system" pointSize="16"/>
+                                    </label>
+                                    <imageView width="0.20000000000000001" alignment="left" verticalAlignment="center" image="icon_categories" contentMode="scaleAspectFit" id="LyF-IR-YWK"/>
+                                </items>
+                                <color key="backgroundColor" red="0.35686274509999999" green="0.70588235290000001" blue="0.8980392157" alpha="1" colorSpace="calibratedRGB"/>
+                            </group>
+                            <connections>
+                                <segue destination="9FZ-Wi-ano" kind="push" id="nst-lS-RkZ"/>
+                            </connections>
+                        </button>
                     </items>
                     <color key="backgroundColor" red="0.0" green="0.58039215690000001" blue="0.83137254900000002" alpha="1" colorSpace="calibratedRGB"/>
                 </controller>
             </objects>
-            <point key="canvasLocation" x="358" y="732"/>
+            <point key="canvasLocation" x="358" y="670.5"/>
         </scene>
         <!--Grouping Controller-->
         <scene sceneID="pgh-zk-OgV">
@@ -94,7 +114,7 @@
                                 <label alignment="right" verticalAlignment="center" text="Catégories" id="gav-rY-h0K">
                                     <fontDescription key="font" type="system" pointSize="18"/>
                                 </label>
-                                <imageView width="0.33000000000000002" alignment="left" verticalAlignment="center" image="icon_logo" contentMode="scaleAspectFit" id="k8T-0d-yLq"/>
+                                <imageView width="0.33000000000000002" alignment="left" verticalAlignment="center" image="icon_micro" contentMode="scaleAspectFit" id="k8T-0d-yLq"/>
                             </items>
                         </group>
                         <table alignment="left" id="0ms-OY-3nn">
@@ -104,9 +124,11 @@
                                         <items>
                                             <label alignment="center" verticalAlignment="center" text="Category" textAlignment="center" id="nxi-gt-YIz"/>
                                         </items>
+                                        <color key="backgroundColor" red="0.35686274509803922" green="0.70588235294117641" blue="0.89803921568627454" alpha="1" colorSpace="calibratedRGB"/>
                                     </group>
                                     <connections>
                                         <outlet property="groupingLabel" destination="nxi-gt-YIz" id="txJ-7m-V9m"/>
+                                        <segue destination="Ahu-dk-GPS" kind="push" id="RKt-hx-xHN"/>
                                     </connections>
                                 </tableRow>
                             </items>
@@ -118,14 +140,14 @@
                     </connections>
                 </controller>
             </objects>
-            <point key="canvasLocation" x="594" y="732"/>
+            <point key="canvasLocation" x="648" y="732"/>
         </scene>
         <!--WordController-->
         <scene sceneID="b0k-RJ-d4N">
             <objects>
                 <controller identifier="WordController" hidesWhenLoading="NO" id="Ahu-dk-GPS" customClass="WordInterfaceController">
                     <items>
-                        <label alignment="center" text="- Mots -" textAlignment="center" id="HR4-PI-nRb">
+                        <label alignment="right" text="Mot" textAlignment="center" id="HR4-PI-nRb">
                             <fontDescription key="font" type="system" pointSize="23"/>
                         </label>
                         <table alignment="left" id="Xu1-Xh-QOA">
@@ -135,6 +157,7 @@
                                         <items>
                                             <label alignment="center" verticalAlignment="center" text="Mot" textAlignment="center" id="M2m-N8-FWU"/>
                                         </items>
+                                        <color key="backgroundColor" red="0.35686274509999999" green="0.70588235290000001" blue="0.8980392157" alpha="1" colorSpace="calibratedRGB"/>
                                     </group>
                                     <connections>
                                         <outlet property="wordLabel" destination="M2m-N8-FWU" id="5k6-Yh-LbD"/>
@@ -149,7 +172,7 @@
                     </connections>
                 </controller>
             </objects>
-            <point key="canvasLocation" x="811" y="737"/>
+            <point key="canvasLocation" x="899" y="732"/>
         </scene>
         <!--Interface Controller-->
         <scene sceneID="X7O-eU-UyD">
@@ -176,10 +199,10 @@
                             </items>
                         </group>
                     </items>
-                    <color key="backgroundColor" red="0.1464088325" green="0.62316597419999997" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    <color key="backgroundColor" red="0.0" green="0.58039215690000001" blue="0.83137254900000002" alpha="1" colorSpace="calibratedRGB"/>
                 </controller>
             </objects>
-            <point key="canvasLocation" x="888" y="-110"/>
+            <point key="canvasLocation" x="402" y="36"/>
         </scene>
         <!--Voice Controller-->
         <scene sceneID="Ncb-aZ-6Yf">
@@ -190,11 +213,12 @@
                             <fontDescription key="font" type="system" pointSize="27"/>
                         </label>
                         <button alignment="left" verticalAlignment="center" id="PKt-rX-WHm">
-                            <group key="contentGroup" width="1" alignment="left" id="6i6-6v-eaa">
+                            <group key="contentGroup" width="1" height="35" alignment="left" id="6i6-6v-eaa">
                                 <items>
-                                    <imageView width="0.29999999999999999" alignment="left" id="G9g-fa-JVc"/>
+                                    <imageView width="0.29999999999999999" height="1" alignment="left" image="icon_micro" contentMode="scaleAspectFit" id="G9g-fa-JVc"/>
                                     <label alignment="right" verticalAlignment="center" text="Activer " id="Bg1-8f-D45"/>
                                 </items>
+                                <color key="backgroundColor" red="0.35686274509999999" green="0.70588235290000001" blue="0.8980392157" alpha="1" colorSpace="calibratedRGB"/>
                             </group>
                             <connections>
                                 <action selector="touchVoiceActivate" destination="pZe-EM-VE3" id="mfb-fQ-KwG"/>
@@ -230,41 +254,35 @@
             <objects>
                 <controller hidesWhenLoading="NO" id="fEL-e1-MoS">
                     <items>
-                        <label alignment="center" text="- Help -" textAlignment="center" id="wuU-MN-uOy">
-                            <color key="textColor" red="0.29803922770000002" green="0.29803922770000002" blue="0.29803922770000002" alpha="1" colorSpace="calibratedRGB"/>
+                        <label alignment="right" text="Help ?" textAlignment="center" id="wuU-MN-uOy">
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                             <fontDescription key="font" type="system" pointSize="27"/>
                         </label>
-                        <group width="1" height="33.5" alignment="left" id="LIp-yd-yHt">
-                            <items>
-                                <label alignment="center" verticalAlignment="center" text="E-" textAlignment="center" id="cuv-uc-HTi"/>
-                                <label alignment="center" verticalAlignment="center" text="World" textAlignment="center" id="PTh-1F-WtC">
-                                    <color key="textColor" red="0.0" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                    <fontDescription key="font" type="boldSystem" pointSize="16"/>
-                                </label>
-                            </items>
-                            <color key="backgroundColor" red="0.40000000600000002" green="0.80000001190000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <label alignment="left" text=" Eword" id="4P8-3T-m7Z">
+                            <fontDescription key="font" type="system" pointSize="16"/>
+                        </label>
+                        <group width="1" height="2" alignment="left" id="ecN-t4-cgu">
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         </group>
                         <label alignment="left" textAlignment="justified" numberOfLines="18" id="KWl-zv-doT">
                             <string key="text">Vous trouverez ici une bibliothèque de mots classés par thème qui vous permettra de vous exprimer en fonction du contexte dans lequel vous vous trouvez. Vous pouvez selectionner certaines listes en favoris et une liste des 20 mots les plus utilisés vous sera proposée.</string>
+                            <fontDescription key="font" type="system" pointSize="13"/>
                         </label>
-                        <group width="134" height="33.5" alignment="left" id="5aE-xI-oFX">
-                            <items>
-                                <label alignment="center" verticalAlignment="center" text="E-" textAlignment="center" id="9BO-h8-MD5"/>
-                                <label alignment="center" verticalAlignment="center" text="Voice" textAlignment="center" id="NuA-tZ-HLN">
-                                    <color key="textColor" red="1" green="0.0" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
-                                    <fontDescription key="font" type="boldSystem" pointSize="15"/>
-                                </label>
-                            </items>
-                            <color key="backgroundColor" red="0.40000000600000002" green="0.80000001190000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <label alignment="left" text=" Evoice" id="wf0-us-TJK">
+                            <fontDescription key="font" type="system" pointSize="16"/>
+                        </label>
+                        <group width="1" height="2" alignment="left" id="r45-dT-BUC">
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         </group>
                         <label alignment="left" numberOfLines="18" id="4uo-xB-raw">
                             <string key="text">Cette fonctionnalité vous permettra de retranscrire ce que votre interlocuteur vous dira directement sur votre iwatch. Le micro s’active automatiquement et vous n’avez plus qu’à lire ce qu’on vous dit.</string>
+                            <fontDescription key="font" type="system" pointSize="13"/>
                         </label>
                     </items>
-                    <color key="backgroundColor" red="0.1464088325" green="0.62316597419999997" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    <color key="backgroundColor" red="0.0" green="0.58039215690000001" blue="0.83137254900000002" alpha="1" colorSpace="calibratedRGB"/>
                 </controller>
             </objects>
-            <point key="canvasLocation" x="-120" y="1016.5"/>
+            <point key="canvasLocation" x="-134" y="914"/>
         </scene>
         <!--Notification Controller-->
         <scene sceneID="ZPc-GJ-vnh">
