@@ -15,13 +15,14 @@
     NSString* name_;
     Grouping* grp_;
     NSNumber* idWord_;
-    Boolean* fav_;
+    BOOL fav_;
 }
 
 
 @property (nonatomic, strong) NSString* name;
 @property (nonatomic, strong) Grouping* grp;
 @property (nonatomic, strong) NSNumber* idWord;
+@property (nonatomic, assign) BOOL fav;
 
 
 @end
