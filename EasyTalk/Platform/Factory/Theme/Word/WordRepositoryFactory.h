@@ -17,5 +17,6 @@
 + (instancetype) sharedInstance;
 
 - (id<IWordRepository>) wordRepository;
++ (NSDictionary*) dictionaryFromArrayOfWord:(NSArray<Word*>*) array;
 
 @end

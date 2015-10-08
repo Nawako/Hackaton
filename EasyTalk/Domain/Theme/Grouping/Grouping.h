@@ -13,7 +13,6 @@
     @private
     NSString* name_;
     NSNumber* idCat_;
-    Boolean* fav_;
 }
 
 

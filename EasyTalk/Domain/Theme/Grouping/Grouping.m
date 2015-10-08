@@ -31,7 +31,7 @@
 //}
 
 - (NSString *) description {
-    return [NSString stringWithFormat:@"Categorie [name=%@,  id=%@]", self.name, self.idCat];
+    return [NSString stringWithFormat:@"Grouping [name=%@,  id=%@]", self.name, self.idCat];
 }
 
 

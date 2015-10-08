@@ -9,6 +9,7 @@
 #import "ViewController.h"
 #import <WatchConnectivity/WatchConnectivity.h>
 #import "GroupingRepositoryFactory.h"
+#import "WordRepositoryFactory.h"
 
 @interface ViewController () <WCSessionDelegate>
 
@@ -16,11 +17,16 @@
 
 @implementation ViewController
 
-@dynamic groupingRepository;
+@dynamic groupingRepository, wordRepository;
 
 - (id<IGroupingRepository>)groupingRepository {
     return [[GroupingRepositoryFactory sharedInstance] groupingRepository];
 }
+
+- (id<IWordRepository>)wordRepository {
+    return [[WordRepositoryFactory sharedInstance] wordRepository];
+}
+
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -28,13 +34,15 @@
     // Do any additional setup after loading the view, typically from a ]
     
     NSArray<Grouping*>* allGrouping = [self.groupingRepository getAll];
-    NSDictionary* values = [GroupingRepositoryFactory dictionaryFromArrayOfGroupings:allGrouping];
+    NSArray<Word*>* allWord = [self.wordRepository getAll];
     
     // Transfert de toutes les catégories vers la watch
     if ([WCSession defaultSession].paired && [WCSession defaultSession].watchAppInstalled) {
-        [[WCSession defaultSession] transferUserInfo:values];
+        [[WCSession defaultSession] transferUserInfo:[GroupingRepositoryFactory dictionaryFromArrayOfGroupings:allGrouping]];
+        [[WCSession defaultSession] transferUserInfo:[WordRepositoryFactory dictionaryFromArrayOfWord:allWord]];
     }
-    NSLog(@"%@", values);
+    NSLog(@"GROUPINGS : %@", [GroupingRepositoryFactory dictionaryFromArrayOfGroupings:allGrouping]);
+    NSLog(@"WORDS : %@", [WordRepositoryFactory dictionaryFromArrayOfWord:allWord]);
 }
 
 - (void)didReceiveMemoryWarning {

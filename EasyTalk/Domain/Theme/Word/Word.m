@@ -28,7 +28,7 @@
 }
 
 - (NSString *) description {
-    return [NSString stringWithFormat:@"Word [name=%@,  id=%@, grouping=%@, favorite=%d]", self.name, self.idWord, self.grp, self.fav];
+    return [NSString stringWithFormat:@"Word [name=%@,  id=%@, grouping=%@, favorite=%@]", self.name, self.idWord, self.grp, (0 == self.fav) ? @"NO" : @"YES"];
 }
 
 
