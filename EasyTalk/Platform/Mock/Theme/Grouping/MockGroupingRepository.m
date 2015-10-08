@@ -28,13 +28,13 @@
     [listGroup addObject:gr2];
     
     Grouping* gr3 = [[Grouping alloc] init];
-    gr2.name = @"Magasin de vetement";
-    gr2.idCat = @(003);
+    gr3.name = @"Magasin de vetement";
+    gr3.idCat = @(003);
     [listGroup addObject:gr3];
     
     Grouping* gr4 = [[Grouping alloc] init];
-    gr2.name = @"Restaurant";
-    gr2.idCat = @(004);
+    gr4.name = @"Restaurant";
+    gr4.idCat = @(004);
     [listGroup addObject:gr4];
     
     
