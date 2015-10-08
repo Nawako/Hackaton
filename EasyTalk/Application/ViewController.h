@@ -7,9 +7,11 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "IGroupingRepository.h"
 
 @interface ViewController : UIViewController
 
+@property (nonatomic, readonly) id<IGroupingRepository> groupingRepository;
 
 @end
 
