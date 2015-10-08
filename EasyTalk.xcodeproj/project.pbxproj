@@ -31,6 +31,8 @@
 		EC41E49C1BC6581D00C8A730 /* WordRowController.m in Sources */ = {isa = PBXBuildFile; fileRef = EC41E49B1BC6581D00C8A730 /* WordRowController.m */; settings = {ASSET_TAGS = (); }; };
 		EC41E4A01BC6668700C8A730 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EC37262D1BC58F75000F23A8 /* Interface.storyboard */; settings = {ASSET_TAGS = (); }; };
 		EC41E4A31BC66A1B00C8A730 /* WordInterfaceController.m in Sources */ = {isa = PBXBuildFile; fileRef = EC41E4A21BC66A1B00C8A730 /* WordInterfaceController.m */; settings = {ASSET_TAGS = (); }; };
+		EC8F35821BC6C5F500195758 /* AddGroupingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EC8F357F1BC6C5F500195758 /* AddGroupingViewController.m */; settings = {ASSET_TAGS = (); }; };
+		EC8F35831BC6C5F500195758 /* AddWordViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EC8F35811BC6C5F500195758 /* AddWordViewController.m */; settings = {ASSET_TAGS = (); }; };
 		ECD2A3901BC593CB00F5CD1E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = ECD2A3721BC593CB00F5CD1E /* AppDelegate.m */; settings = {ASSET_TAGS = (); }; };
 		ECD2A3911BC593CB00F5CD1E /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ECD2A3741BC593CB00F5CD1E /* ViewController.m */; settings = {ASSET_TAGS = (); }; };
 		ECD2A3921BC593CB00F5CD1E /* Grouping.m in Sources */ = {isa = PBXBuildFile; fileRef = ECD2A3791BC593CB00F5CD1E /* Grouping.m */; settings = {ASSET_TAGS = (); }; };
@@ -123,6 +125,10 @@
 		EC41E49B1BC6581D00C8A730 /* WordRowController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WordRowController.m; sourceTree = "<group>"; };
 		EC41E4A11BC66A1B00C8A730 /* WordInterfaceController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WordInterfaceController.h; sourceTree = "<group>"; };
 		EC41E4A21BC66A1B00C8A730 /* WordInterfaceController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WordInterfaceController.m; sourceTree = "<group>"; };
+		EC8F357E1BC6C5F500195758 /* AddGroupingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddGroupingViewController.h; sourceTree = "<group>"; };
+		EC8F357F1BC6C5F500195758 /* AddGroupingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddGroupingViewController.m; sourceTree = "<group>"; };
+		EC8F35801BC6C5F500195758 /* AddWordViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddWordViewController.h; sourceTree = "<group>"; };
+		EC8F35811BC6C5F500195758 /* AddWordViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddWordViewController.m; sourceTree = "<group>"; };
 		ECD2A3711BC593CB00F5CD1E /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		ECD2A3721BC593CB00F5CD1E /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		ECD2A3731BC593CB00F5CD1E /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
@@ -350,6 +356,10 @@
 		ECD2A3701BC593CB00F5CD1E /* Application */ = {
 			isa = PBXGroup;
 			children = (
+				EC8F357E1BC6C5F500195758 /* AddGroupingViewController.h */,
+				EC8F357F1BC6C5F500195758 /* AddGroupingViewController.m */,
+				EC8F35801BC6C5F500195758 /* AddWordViewController.h */,
+				EC8F35811BC6C5F500195758 /* AddWordViewController.m */,
 				ECD2A3711BC593CB00F5CD1E /* AppDelegate.h */,
 				ECD2A3721BC593CB00F5CD1E /* AppDelegate.m */,
 				ECD2A3731BC593CB00F5CD1E /* ViewController.h */,
@@ -536,11 +546,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EC8F35831BC6C5F500195758 /* AddWordViewController.m in Sources */,
 				521D19051BC5C74500762338 /* MockGroupingRepository.m in Sources */,
 				ECD2A3931BC593CB00F5CD1E /* Word.m in Sources */,
 				521D19041BC5C74500762338 /* WordRepositoryFactory.m in Sources */,
 				521D19031BC5C74500762338 /* GroupingRepositoryFactory.m in Sources */,
 				ECD2A3921BC593CB00F5CD1E /* Grouping.m in Sources */,
+				EC8F35821BC6C5F500195758 /* AddGroupingViewController.m in Sources */,
 				ECD2A3911BC593CB00F5CD1E /* ViewController.m in Sources */,
 				521D19071BC5C74500762338 /* SerializableGroupingRepository.m in Sources */,
 				521D19081BC5C74500762338 /* SerializableWordRepository.m in Sources */,
