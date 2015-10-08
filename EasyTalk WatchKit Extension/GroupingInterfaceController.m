@@ -60,10 +60,17 @@
     [super didDeactivate];
 }
 
+<<<<<<< HEAD
 - (void)session:(WCSession *)session didReceiveMessage:(NSDictionary<NSString *,id> *)message {
     NSLog(@"%@", message);
 }
 
+=======
+
+//- (void)table:(WKInterfaceTable *)table didSelectRowAtIndex:(NSInteger)rowIndex {
+//    [self pushControllerWithName:(nonnull NSString *) context:<#(nullable id)#>]
+//}
+>>>>>>> 23dc6a0272e878d0bd26cec9e7b705dba723ae1e
 
 @end
 

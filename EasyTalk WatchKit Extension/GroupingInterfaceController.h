@@ -11,9 +11,6 @@
 
 @interface GroupingInterfaceController : WKInterfaceController <WKExtensionDelegate>
 
-
 @property (strong, nonatomic) IBOutlet WKInterfaceTable *groupingTable;
-
-
 
 @end

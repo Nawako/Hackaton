@@ -10,8 +10,11 @@
 
 @implementation GroupingRowController
 
+
 - (void) setLabel:(NSString*)groupingLabel {
     [self.groupingLabel setText:groupingLabel];
 }
+
+
 
 @end

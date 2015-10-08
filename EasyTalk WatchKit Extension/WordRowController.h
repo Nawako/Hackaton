@@ -7,7 +7,12 @@
 //
 
 #import <Foundation/Foundation.h>
+#import <WatchKit/WatchKit.h>
 
 @interface WordRowController : NSObject
+
+@property (strong, nonatomic) IBOutlet WKInterfaceLabel *wordLabel;
+
+- (void) setLabel:(NSString*)wordLabel;
 
 @end

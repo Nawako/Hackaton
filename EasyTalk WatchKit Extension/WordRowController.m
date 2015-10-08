@@ -10,4 +10,8 @@
 
 @implementation WordRowController
 
+- (void) setLabel:(NSString*)wordLabel {
+    [self.wordLabel setText:wordLabel];
+}
+
 @end
