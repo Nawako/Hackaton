@@ -13,12 +13,13 @@
     @private
     NSString* name_;
     NSNumber* idCat_;
-    Boolean* fav_;
+    BOOL isFavourite_;
 }
 
 
 @property (nonatomic, strong) NSString* name;
 @property (nonatomic, strong) NSNumber* idCat;
+@property (nonatomic, assign) BOOL isFavourite;
 
 
 @end

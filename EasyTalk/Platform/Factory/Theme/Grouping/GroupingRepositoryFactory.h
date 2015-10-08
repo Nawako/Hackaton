@@ -17,5 +17,6 @@
 + (instancetype) sharedInstance;
 
 - (id<IGroupingRepository>) groupingRepository;
++ (NSDictionary *) dictionaryFromArrayOfGroupings:(NSArray<Grouping *> *) array;
 
 @end

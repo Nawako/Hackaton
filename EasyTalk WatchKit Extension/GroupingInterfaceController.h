@@ -9,7 +9,7 @@
 #import <WatchKit/WatchKit.h>
 #import <Foundation/Foundation.h>
 
-@interface GroupingInterfaceController : WKInterfaceController
+@interface GroupingInterfaceController : WKInterfaceController <WKExtensionDelegate>
 
 
 @property (strong, nonatomic) IBOutlet WKInterfaceTable *groupingTable;

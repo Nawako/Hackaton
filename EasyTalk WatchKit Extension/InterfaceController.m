@@ -6,6 +6,7 @@
 //  Copyright © 2015 Etudiant. All rights reserved.
 //
 
+#import "WKInterfaceController+Refresh.h"
 #import "InterfaceController.h"
 
 
@@ -25,11 +26,7 @@
 - (void)willActivate {
     // This method is called when watch view controller is about to be visible to user
     [super willActivate];
-    
-    NSString* documentPath = [NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES)objectAtIndex:0];
-    NSString* filePath = [documentPath stringByAppendingPathComponent:@"userinfo.archive"];
-    NSDictionary* userInfo = [NSKeyedUnarchiver unarchiveObjectWithFile:filePath];
-    NSLog(@"%@", userInfo);
+    NSLog(@"LOG");
     
 //    [self.levelLabel setText:[[userInfo objectForKey: @"level"] stringValue] ];
     

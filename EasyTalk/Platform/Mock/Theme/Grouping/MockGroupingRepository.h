@@ -11,6 +11,6 @@
 
 @interface MockGroupingRepository : NSObject <IGroupingRepository>
 
-- (NSMutableArray<Grouping*>*) getAll;
+- (NSMutableArray<Grouping *> *) getAll;
 
 @end

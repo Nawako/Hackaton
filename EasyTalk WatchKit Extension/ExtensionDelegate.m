@@ -1,3 +1,4 @@
+
 //
 //  ExtensionDelegate.m
 //  EasyTalk WatchKit Extension
@@ -18,6 +19,12 @@
 - (void)applicationDidFinishLaunching {
     // Perform any final initialization of your application.
     
+    if([WCSession class] && [WCSession isSupported]) {
+        WCSession* session = [WCSession defaultSession];
+        session.delegate = self;
+        [session activateSession];
+    }
+    
 }
 
 - (void)applicationDidBecomeActive {
@@ -34,8 +41,12 @@
     NSString* documentPath = [NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES)objectAtIndex:0];
     NSString* filePath = [documentPath stringByAppendingPathComponent:@"userinfo.archive"];
     [NSKeyedArchiver archiveRootObject:userInfo toFile:filePath];
-    NSLog(@"%@", userInfo);
     
+}
+
+- (void)session:(WCSession *)session didReceiveMessage:(NSDictionary<NSString *, id> *)message {
+    NSString* msg = [message objectForKey:@"message"];
+    NSLog(@"%@", msg);
 }
 
 @end

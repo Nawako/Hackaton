@@ -13,7 +13,7 @@
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="7Go-vM-FoP">
@@ -44,8 +44,12 @@
         <scene sceneID="wAs-TJ-kKM">
             <objects>
                 <viewController id="L81-JO-cPk" customClass="AddWordViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="ATG-QL-vbo"/>
+                        <viewControllerLayoutGuide type="bottom" id="GtO-cn-WnX"/>
+                    </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="Jqb-aR-egl">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Nom" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" id="sL1-VY-xmA">
@@ -93,8 +97,12 @@
         <scene sceneID="4Fs-v9-Jes">
             <objects>
                 <viewController id="rDH-tf-Rwq" customClass="AddGroupingViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="fKP-uO-LIh"/>
+                        <viewControllerLayoutGuide type="bottom" id="eom-9S-dBI"/>
+                    </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="pmy-cv-ee3">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="4VP-9c-Zqy">
