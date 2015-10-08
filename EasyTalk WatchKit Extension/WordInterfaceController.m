@@ -50,6 +50,14 @@
     [super didDeactivate];
 }
 
+- (void)didReceiveUserInfo {
+    
+}
+
+- (NSDictionary *)getUserInfo {
+    return nil;
+}
+
 @end
 
 
