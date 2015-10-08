@@ -13,4 +13,7 @@
 
 @property (strong, nonatomic) IBOutlet WKInterfaceTable *groupingTable;
 
+- (NSDictionary*) getUserInfo;
+- (void) didReceiveUserInfo;
+
 @end

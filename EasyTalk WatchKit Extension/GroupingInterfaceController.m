@@ -11,6 +11,7 @@
 
 @interface GroupingInterfaceController () {
     @private
+    NSDictionary* userInfo_;
     NSArray* values_;
 }
 
@@ -21,24 +22,26 @@
 - (void)awakeWithContext:(id)context {
     [super awakeWithContext:context];
     
-    values_ = @[@"Boulangerie",@"Restaurant",@"Cinema"];
+//    values_ = @[@"Boulangerie",@"Restaurant",@"Cinema"];
+//    
+//    NSUInteger count = [values_ count];
+//    
+//    [self.groupingTable setNumberOfRows:count withRowType:@"Grouping"];
+//    
+//    for (NSUInteger i = 0; i<count; i++) {
+//        GroupingRowController* rowController = [self.groupingTable rowControllerAtIndex:i];
+//        NSLog(@"%@", [values_ objectAtIndex:i]);
+//        [rowController setLabel:[values_ objectAtIndex:i]];
+//    }
     
-    NSUInteger count = [values_ count];
-    
-    [self.groupingTable setNumberOfRows:count withRowType:@"Grouping"];
-    
-    for (NSUInteger i = 0; i<count; i++) {
-        GroupingRowController* rowController = [self.groupingTable rowControllerAtIndex:i];
-        NSLog(@"%@", [values_ objectAtIndex:i]);
-        [rowController setLabel:[values_ objectAtIndex:i]];
-    }
-    
-    // Configure interface objects here.
 }
 
 - (void)willActivate {
     // This method is called when watch view controller is about to be visible to user
     [super willActivate];
+    
+    [self getUserInfo];
+    [self didReceiveUserInfo];
 }
 
 - (void)didDeactivate {
@@ -46,10 +49,25 @@
     [super didDeactivate];
 }
 
+- (NSDictionary *)getUserInfo {
+    NSString* documentPath = [NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES) objectAtIndex:0];
+    NSString* filePath = [documentPath stringByAppendingPathComponent:@"userinfo.archive"];
 
-//- (void)table:(WKInterfaceTable *)table didSelectRowAtIndex:(NSInteger)rowIndex {
-//    [self pushControllerWithName:(nonnull NSString *) context:<#(nullable id)#>]
-//}
+    return (userInfo_ = [NSKeyedUnarchiver unarchiveObjectWithFile:filePath]);
+}
+
+
+- (void) didReceiveUserInfo {
+    NSUInteger e = [userInfo_ count];
+    
+    [self.groupingTable setNumberOfRows:e withRowType:@"Grouping"];
+    
+    for(NSUInteger i = 0; i < e; ++i) {
+        GroupingRowController* rowController = [self.groupingTable rowControllerAtIndex:i];
+        [rowController setLabel:([userInfo_ objectForKey:@(i+1)])];
+    }
+}
+
 
 @end
 

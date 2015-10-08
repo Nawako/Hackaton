@@ -6,9 +6,10 @@
 //  Copyright © 2015 Etudiant. All rights reserved.
 //
 
+#import <WatchConnectivity/WatchConnectivity.h>
 #import "AppDelegate.h"
 
-@interface AppDelegate ()
+@interface AppDelegate () <WCSessionDelegate>
 
 @end
 
@@ -17,6 +18,13 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    
+    if([WCSession class] && [WCSession isSupported]) {
+        WCSession* session = [WCSession defaultSession];
+        session.delegate = self;
+        [session activateSession];
+    }
+    
     return YES;
 }
 

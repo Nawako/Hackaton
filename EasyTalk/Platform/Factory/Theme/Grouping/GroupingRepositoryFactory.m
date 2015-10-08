@@ -29,4 +29,15 @@ static GroupingRepositoryFactory* sharedInstance_ = nil;
     return groupingRepository_;
 }
 
++ (NSDictionary *)dictionaryFromArrayOfGroupings:(NSArray<Grouping *> *)array {
+    NSUInteger e = [array count];
+    NSMutableDictionary* result = [NSMutableDictionary new];
+    
+    for(NSUInteger i = 0; i < e; ++i) {
+        [result setObject:[array objectAtIndex:i].name forKey:[array objectAtIndex:i].idCat];
+    }
+    
+    return result;
+}
+
 @end
