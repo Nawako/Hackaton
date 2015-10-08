@@ -16,6 +16,7 @@
         self.name = [aDecoder decodeObjectForKey:@"NAME"];
         self.idWord = [aDecoder decodeObjectForKey:@"ID"];
         self.grp = [aDecoder decodeObjectForKey:@"GRP"];
+        self.fav = NO;
     }
     return self;
 }
@@ -27,7 +28,7 @@
 }
 
 - (NSString *) description {
-    return [NSString stringWithFormat:@"Grouping [name=%@,  id=%@, categorie=%@]", self.name, self.idWord, self.grp];
+    return [NSString stringWithFormat:@"Word [name=%@,  id=%@, grouping=%@, favorite=%d]", self.name, self.idWord, self.grp, self.fav];
 }
 
 
