@@ -19,7 +19,6 @@
 		EC3726211BC58F75000F23A8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EC3726201BC58F75000F23A8 /* Assets.xcassets */; };
 		EC3726241BC58F75000F23A8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EC3726221BC58F75000F23A8 /* LaunchScreen.storyboard */; };
 		EC3726291BC58F75000F23A8 /* EasyTalk WatchKit App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = EC3726281BC58F75000F23A8 /* EasyTalk WatchKit App.app */; };
-		EC37262F1BC58F75000F23A8 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EC37262D1BC58F75000F23A8 /* Interface.storyboard */; };
 		EC3726311BC58F75000F23A8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EC3726301BC58F75000F23A8 /* Assets.xcassets */; };
 		EC3726381BC58F75000F23A8 /* EasyTalk WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = EC3726371BC58F75000F23A8 /* EasyTalk WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		EC3726401BC58F75000F23A8 /* InterfaceController.m in Sources */ = {isa = PBXBuildFile; fileRef = EC37263F1BC58F75000F23A8 /* InterfaceController.m */; };
@@ -319,11 +318,19 @@
 				EC3726421BC58F75000F23A8 /* ExtensionDelegate.m */,
 				EC3726441BC58F75000F23A8 /* NotificationController.h */,
 				EC3726451BC58F75000F23A8 /* NotificationController.m */,
+				521D18E51BC5AFD000762338 /* VoiceController.h */,
+				521D18E61BC5AFD000762338 /* VoiceController.m */,
+				EC41E4911BC653D900C8A730 /* GroupingInterfaceController.h */,
+				EC41E4921BC653D900C8A730 /* GroupingInterfaceController.m */,
+				EC41E4971BC6580800C8A730 /* GroupingRowController.h */,
+				EC41E4981BC6580800C8A730 /* GroupingRowController.m */,
+				EC41E49A1BC6581D00C8A730 /* WordRowController.h */,
+				EC41E49B1BC6581D00C8A730 /* WordRowController.m */,
+				EC41E4A11BC66A1B00C8A730 /* WordInterfaceController.h */,
+				EC41E4A21BC66A1B00C8A730 /* WordInterfaceController.m */,
 				EC3726471BC58F75000F23A8 /* Assets.xcassets */,
 				EC3726491BC58F75000F23A8 /* Info.plist */,
 				EC37263C1BC58F75000F23A8 /* Supporting Files */,
-				521D18E51BC5AFD000762338 /* VoiceController.h */,
-				521D18E61BC5AFD000762338 /* VoiceController.m */,
 			);
 			path = "EasyTalk WatchKit Extension";
 			sourceTree = "<group>";
@@ -511,8 +518,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EC41E4A01BC6668700C8A730 /* Interface.storyboard in Resources */,
 				EC3726311BC58F75000F23A8 /* Assets.xcassets in Resources */,
-				EC37262F1BC58F75000F23A8 /* Interface.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -538,7 +545,6 @@
 				521D19041BC5C74500762338 /* WordRepositoryFactory.m in Sources */,
 				521D19031BC5C74500762338 /* GroupingRepositoryFactory.m in Sources */,
 				ECD2A3921BC593CB00F5CD1E /* Grouping.m in Sources */,
-				EC47E7251BC646A900F9F61B /* AddGroupingViewController.m in Sources */,
 				ECD2A3911BC593CB00F5CD1E /* ViewController.m in Sources */,
 				521D19071BC5C74500762338 /* SerializableGroupingRepository.m in Sources */,
 				521D19081BC5C74500762338 /* SerializableWordRepository.m in Sources */,
@@ -553,9 +559,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				EC3726431BC58F75000F23A8 /* ExtensionDelegate.m in Sources */,
+				EC41E4931BC653D900C8A730 /* GroupingInterfaceController.m in Sources */,
 				EC3726401BC58F75000F23A8 /* InterfaceController.m in Sources */,
+				EC41E49C1BC6581D00C8A730 /* WordRowController.m in Sources */,
 				521D18E71BC5AFD000762338 /* VoiceController.m in Sources */,
+				EC41E4A31BC66A1B00C8A730 /* WordInterfaceController.m in Sources */,
 				EC3726461BC58F75000F23A8 /* NotificationController.m in Sources */,
+				EC41E4991BC6580800C8A730 /* GroupingRowController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

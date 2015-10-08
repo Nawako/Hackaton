@@ -28,12 +28,13 @@
     // Do any additional setup after loading the view, typically from a ]
     
     NSArray<Grouping*>* allGrouping = [self.groupingRepository getAll];
+    NSDictionary* values = [GroupingRepositoryFactory dictionaryFromArrayOfGroupings:allGrouping];
     
     // Transfert de toutes les catégories vers la watch
     if ([WCSession defaultSession].paired && [WCSession defaultSession].watchAppInstalled) {
-        [[WCSession defaultSession] transferUserInfo:@{@"allGrouping": allGrouping}];
+        [[WCSession defaultSession] transferUserInfo:values];
     }
-    NSLog(@"%@", allGrouping);
+    NSLog(@"%@", values);
 }
 
 - (void)didReceiveMemoryWarning {
