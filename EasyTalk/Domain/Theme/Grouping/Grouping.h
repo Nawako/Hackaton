@@ -13,10 +13,12 @@
     @private
     NSString* name_;
     NSNumber* idCat_;
+    Boolean* fav_;
 }
 
 
 @property (nonatomic, strong) NSString* name;
 @property (nonatomic, strong) NSNumber* idCat;
+
 
 @end
