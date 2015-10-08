@@ -19,7 +19,6 @@
 		EC3726211BC58F75000F23A8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EC3726201BC58F75000F23A8 /* Assets.xcassets */; };
 		EC3726241BC58F75000F23A8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EC3726221BC58F75000F23A8 /* LaunchScreen.storyboard */; };
 		EC3726291BC58F75000F23A8 /* EasyTalk WatchKit App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = EC3726281BC58F75000F23A8 /* EasyTalk WatchKit App.app */; };
-		EC37262F1BC58F75000F23A8 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EC37262D1BC58F75000F23A8 /* Interface.storyboard */; };
 		EC3726311BC58F75000F23A8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EC3726301BC58F75000F23A8 /* Assets.xcassets */; };
 		EC3726381BC58F75000F23A8 /* EasyTalk WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = EC3726371BC58F75000F23A8 /* EasyTalk WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		EC3726401BC58F75000F23A8 /* InterfaceController.m in Sources */ = {isa = PBXBuildFile; fileRef = EC37263F1BC58F75000F23A8 /* InterfaceController.m */; };
@@ -27,6 +26,10 @@
 		EC3726461BC58F75000F23A8 /* NotificationController.m in Sources */ = {isa = PBXBuildFile; fileRef = EC3726451BC58F75000F23A8 /* NotificationController.m */; };
 		EC3726481BC58F75000F23A8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EC3726471BC58F75000F23A8 /* Assets.xcassets */; };
 		EC3726581BC58FB6000F23A8 /* WatchConnectivity.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EC3726571BC58FB6000F23A8 /* WatchConnectivity.framework */; };
+		EC41E4931BC653D900C8A730 /* GroupingInterfaceController.m in Sources */ = {isa = PBXBuildFile; fileRef = EC41E4921BC653D900C8A730 /* GroupingInterfaceController.m */; settings = {ASSET_TAGS = (); }; };
+		EC41E4991BC6580800C8A730 /* GroupingRowController.m in Sources */ = {isa = PBXBuildFile; fileRef = EC41E4981BC6580800C8A730 /* GroupingRowController.m */; settings = {ASSET_TAGS = (); }; };
+		EC41E49C1BC6581D00C8A730 /* WordRowController.m in Sources */ = {isa = PBXBuildFile; fileRef = EC41E49B1BC6581D00C8A730 /* WordRowController.m */; settings = {ASSET_TAGS = (); }; };
+		EC41E4A01BC6668700C8A730 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EC37262D1BC58F75000F23A8 /* Interface.storyboard */; settings = {ASSET_TAGS = (); }; };
 		ECD2A3901BC593CB00F5CD1E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = ECD2A3721BC593CB00F5CD1E /* AppDelegate.m */; settings = {ASSET_TAGS = (); }; };
 		ECD2A3911BC593CB00F5CD1E /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ECD2A3741BC593CB00F5CD1E /* ViewController.m */; settings = {ASSET_TAGS = (); }; };
 		ECD2A3921BC593CB00F5CD1E /* Grouping.m in Sources */ = {isa = PBXBuildFile; fileRef = ECD2A3791BC593CB00F5CD1E /* Grouping.m */; settings = {ASSET_TAGS = (); }; };
@@ -111,6 +114,12 @@
 		EC3726471BC58F75000F23A8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EC3726491BC58F75000F23A8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EC3726571BC58FB6000F23A8 /* WatchConnectivity.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WatchConnectivity.framework; path = System/Library/Frameworks/WatchConnectivity.framework; sourceTree = SDKROOT; };
+		EC41E4911BC653D900C8A730 /* GroupingInterfaceController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GroupingInterfaceController.h; sourceTree = "<group>"; };
+		EC41E4921BC653D900C8A730 /* GroupingInterfaceController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GroupingInterfaceController.m; sourceTree = "<group>"; };
+		EC41E4971BC6580800C8A730 /* GroupingRowController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GroupingRowController.h; sourceTree = "<group>"; };
+		EC41E4981BC6580800C8A730 /* GroupingRowController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GroupingRowController.m; sourceTree = "<group>"; };
+		EC41E49A1BC6581D00C8A730 /* WordRowController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WordRowController.h; sourceTree = "<group>"; };
+		EC41E49B1BC6581D00C8A730 /* WordRowController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WordRowController.m; sourceTree = "<group>"; };
 		ECD2A3711BC593CB00F5CD1E /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		ECD2A3721BC593CB00F5CD1E /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		ECD2A3731BC593CB00F5CD1E /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
@@ -315,6 +324,12 @@
 				EC37263C1BC58F75000F23A8 /* Supporting Files */,
 				521D18E51BC5AFD000762338 /* VoiceController.h */,
 				521D18E61BC5AFD000762338 /* VoiceController.m */,
+				EC41E4911BC653D900C8A730 /* GroupingInterfaceController.h */,
+				EC41E4921BC653D900C8A730 /* GroupingInterfaceController.m */,
+				EC41E4971BC6580800C8A730 /* GroupingRowController.h */,
+				EC41E4981BC6580800C8A730 /* GroupingRowController.m */,
+				EC41E49A1BC6581D00C8A730 /* WordRowController.h */,
+				EC41E49B1BC6581D00C8A730 /* WordRowController.m */,
 			);
 			path = "EasyTalk WatchKit Extension";
 			sourceTree = "<group>";
@@ -496,8 +511,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EC41E4A01BC6668700C8A730 /* Interface.storyboard in Resources */,
 				EC3726311BC58F75000F23A8 /* Assets.xcassets in Resources */,
-				EC37262F1BC58F75000F23A8 /* Interface.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -535,9 +550,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				EC3726431BC58F75000F23A8 /* ExtensionDelegate.m in Sources */,
+				EC41E4931BC653D900C8A730 /* GroupingInterfaceController.m in Sources */,
 				EC3726401BC58F75000F23A8 /* InterfaceController.m in Sources */,
+				EC41E49C1BC6581D00C8A730 /* WordRowController.m in Sources */,
 				521D18E71BC5AFD000762338 /* VoiceController.m in Sources */,
 				EC3726461BC58F75000F23A8 /* NotificationController.m in Sources */,
+				EC41E4991BC6580800C8A730 /* GroupingRowController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

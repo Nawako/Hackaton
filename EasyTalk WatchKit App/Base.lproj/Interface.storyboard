@@ -60,29 +60,35 @@
                     <color key="backgroundColor" red="0.14640883246580738" green="0.62316597424114595" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                 </controller>
             </objects>
-            <point key="canvasLocation" x="220" y="197"/>
+            <point key="canvasLocation" x="135" y="422"/>
         </scene>
-        <!--Interface Controller-->
+        <!--Grouping Interface Controller-->
         <scene sceneID="pgh-zk-OgV">
             <objects>
-                <controller hidesWhenLoading="NO" id="9FZ-Wi-ano">
+                <controller hidesWhenLoading="NO" id="9FZ-Wi-ano" customClass="GroupingInterfaceController">
                     <items>
                         <label alignment="center" text="- Categorie -" textAlignment="center" id="4yP-mK-DcP">
                             <fontDescription key="font" type="system" pointSize="23"/>
                         </label>
                         <table alignment="left" id="0ms-OY-3nn">
                             <items>
-                                <tableRow id="4ZU-sS-Ygz">
+                                <tableRow identifier="Grouping" id="4ZU-sS-Ygz" customClass="GroupingRowController">
                                     <group key="rootItem" width="1" alignment="left" id="FBc-aF-faB">
                                         <items>
                                             <label alignment="center" verticalAlignment="center" text="Category" textAlignment="center" id="nxi-gt-YIz"/>
                                         </items>
                                     </group>
+                                    <connections>
+                                        <outlet property="groupingLabel" destination="nxi-gt-YIz" id="txJ-7m-V9m"/>
+                                    </connections>
                                 </tableRow>
                             </items>
                         </table>
                     </items>
                     <color key="backgroundColor" red="0.14640883246580738" green="0.62316597424114595" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    <connections>
+                        <outlet property="groupingTable" destination="0ms-OY-3nn" id="wcz-Xd-nFQ"/>
+                    </connections>
                 </controller>
             </objects>
             <point key="canvasLocation" x="568" y="197"/>
@@ -162,7 +168,7 @@
                     </connections>
                 </controller>
             </objects>
-            <point key="canvasLocation" x="220" y="-245"/>
+            <point key="canvasLocation" x="220" y="-105"/>
         </scene>
         <!--Static Notification Interface Controller-->
         <scene sceneID="AEw-b0-oYE">
@@ -226,6 +232,6 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="1U7-dt-d3e"/>
+        <segue reference="npT-fb-VhM"/>
     </inferredMetricsTieBreakers>
 </document>
