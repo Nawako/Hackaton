@@ -68,6 +68,10 @@
     }
 }
 
+- (void)table:(WKInterfaceTable *)table didSelectRowAtIndex:(NSInteger)rowIndex {
+    NSString* category = [userInfo_ objectForKey:@(rowIndex+1)];
+    [self pushControllerWithName:@"WordController" context:category];
+}
 
 @end
 

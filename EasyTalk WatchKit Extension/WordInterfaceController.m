@@ -20,7 +20,7 @@
 
 - (void)awakeWithContext:(id)context {
     [super awakeWithContext:context];
-    
+        
     values_ = @[@"Croissant",@"Petit pains", @"Chouquettes", @"Autre"];
     
     NSUInteger count = [values_ count];
