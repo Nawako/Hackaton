@@ -35,7 +35,7 @@
     f.numberStyle = NSNumberFormatterDecimalStyle;
     NSNumber *myNumber = [f numberFromString:idGroup];
     gr.idWord = myNumber;
-    gr.categ = nameGroup;
+    gr.grp.name = nameGroup;
     MockWordRepository* affich = [[MockWordRepository alloc] init];
     NSMutableArray* add = affich.getAll;
     [add addObject:gr];

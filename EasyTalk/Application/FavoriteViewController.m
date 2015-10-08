@@ -21,7 +21,7 @@
     self.navigationController.navigationBarHidden = NO;
     kCellIdentifier = @"Favorite";
    // [self.FavoriteImage setImage:[UIImage imageNamed:@"etoilefav pleine"]];
-    Item = @[@"Boulangerie", @"Boucherie", @"Transport", @"Restaurant", @"Musique"];
+    Item = //@[@"Boulangerie", @"Boucherie", @"Transport", @"Restaurant", @"Musique"];
     FavoriteItem = [NSMutableArray new]; // lecture de fichier
     
     
